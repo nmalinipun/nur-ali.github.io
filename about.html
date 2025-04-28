@@ -3,53 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About - Nur Mohammad Ali</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About Me - Nur Mohammad Ali</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f8fa;
+      color: #333;
+    }
+    header {
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    main {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077cc;
+      margin-top: 30px;
+    }
+    ul {
+      line-height: 2;
+    }
+    .gallery {
+      margin-top: 40px;
+      text-align: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: none;
+    }
+    .quote {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 1.2em;
+      font-weight: 500;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
   <header>
     <h1>About Me</h1>
     <p>Learn more about Nur Mohammad Ali</p>
   </header>
 
   <main>
-    <h2>Who am I?</h2>
-    <p>Hello! My name is Nur Mohammad Ali. I am a Doctor of Engineering student at Lamar University, Texas. I specialize in research, innovation, and technology with a passion for real-world problem solving through data, AI, and engineering solutions.</p>
+    <section>
+      <h2>Who am I?</h2>
+      <p>Hello! I'm Nur Mohammad Ali, a Doctor of Engineering student at Lamar University, Texas. I am passionate about research, innovation, and creating real-world solutions through data, AI, and technology.</p>
+    </section>
 
-    <h2>Education</h2>
-    <ul>
-      <li>Doctor of Engineering (Industrial Engineering) - Lamar University, USA</li>
-      <li>MBA in Marketing - Jahangirnagar University, Bangladesh</li>
-      <li>BSc in Electrical and Electronic Engineering - American International University-Bangladesh</li>
-    </ul>
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>Doctor of Engineering (Industrial Engineering) - Lamar University, USA</li>
+        <li>MBA in Marketing - Jahangirnagar University, Bangladesh</li>
+        <li>M.Engg in Industrial Engineering - Lamar University, USA</li>
+        <li>BSc in Electrical and Electronic Engineering - AIUB, Bangladesh</li>
+      </ul>
+    </section>
 
-    <h2>Key Skills</h2>
-    <ul>
-      <li>Supply Chain Management</li>
-      <li>Data Analytics and Forecasting</li>
-      <li>ERP Systems: SAP, Oracle</li>
-      <li>Python (Basic Level)</li>
-      <li>Research Publications and Technical Writing</li>
-    </ul>
+    <section>
+      <h2>Professional Journey</h2>
+      <p>I have hands-on experience in the automotive, electronics, and manufacturing industries, contributing to supply chain optimization, forecasting, and innovation projects.</p>
+    </section>
+
+    <section>
+      <h2>Hobbies & Interests</h2>
+      <ul>
+        <li>✈️ Traveling and Road Trips</li>
+        <li>🎬 Watching Korean Movies</li>
+        <li>📚 Learning New Technologies</li>
+        <li>🚗 Exploring Automotive Innovations</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Fun Facts</h2>
+      <ul>
+        <li>Visited 12+ states in the USA</li>
+        <li>Love spontaneous road trips</li>
+        <li>Passionate about personal growth and leadership</li>
+      </ul>
+    </section>
+
+    <section class="gallery">
+      <h2>Life Moments</h2>
+      <img class="slides" src="img1.jpg" alt="Life Moment 1">
+      <img class="slides" src="img2.jpg" alt="Life Moment 2">
+      <img class="slides" src="img3.jpg" alt="Life Moment 3">
+      <img class="slides" src="img4.jpg" alt="Life Moment 4">
+      <img class="slides" src="img5.jpg" alt="Life Moment 5">
+      <img class="slides" src="img6.jpg" alt="Life Moment 6">
+      <img class="slides" src="img7.jpg" alt="Life Moment 7">
+    </section>
+
+    <div class="quote">
+      “Dream big, work hard, stay humble.”
+    </div>
   </main>
 
-  <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-  </footer>
+  <script>
+    let slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      let slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 5 seconds
+    }
+  </script>
 </body>
 </html>
