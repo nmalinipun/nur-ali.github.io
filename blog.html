@@ -7,55 +7,90 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1>Blog and Media Posts</h1>
-    <p>Sharing my articles, thoughts, media posts, and social updates.</p>
-  </header>
+<!-- Navigation Bar -->
+<nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="blog.html" class="active">Blog</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="volunteering.html">Volunteering</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <h2>Recent Blog Posts</h2>
+<!-- Blog Header -->
+<header class="page-header">
+  <h1>My Blog</h1>
+  <p>Stories, Experiences, and Insights</p>
+</header>
 
-    <article>
-      <h3>Exploring the Future of Electric Vehicles 🚗🔋</h3>
-      <p>Published: March 2025</p>
-      <p>Electric vehicles are transforming global transportation. In this blog, I explore the growth opportunities and challenges facing the EV market today and beyond.</p>
-      <img src="gallery/ev_future.jpg" alt="Electric Vehicles" width="500">
-    </article>
+<!-- Blog Content -->
+<main style="padding: 40px 20px;">
+  <section class="blog-section">
+    <h2>Blog Post Title Example</h2>
+    <p style="font-style: italic; color: gray;">Published on April 27, 2025</p>
 
-    <article>
-      <h3>How Augmented Reality is Shaping Manufacturing 🏭✨</h3>
-      <p>Published: February 2025</p>
-      <p>Augmented Reality is not just entertainment. It's a game-changer for manufacturing operations, training, and maintenance. Here’s how AR is reshaping industry standards.</p>
-      <iframe width="500" height="280" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="AR in Manufacturing"></iframe>
-    </article>
+    <img src="images/blog-sample.jpg" alt="Blog Image" style="width:100%; max-width:600px; margin:20px auto; display:block; border-radius:8px;">
 
-    <h2>Social Media Highlights</h2>
-    <p>Follow me for latest updates!</p>
-    <ul>
-      <li><a href="https://x.com/NurMohammadAli" target="_blank">My X (Twitter) Updates</a></li>
-      <li><a href="https://instagram.com/nipunmunna" target="_blank">Instagram Gallery</a></li>
-      <li><a href="https://www.linkedin.com/in/nmalinipun/" target="_blank">LinkedIn News and Posts</a></li>
-    </ul>
+    <p>This is where you can start writing your blog content. You can also embed YouTube videos, upload images, or format text into paragraphs.</p>
 
-  </main>
+    <p>Example embedded video below:</p>
 
-  <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-  </footer>
+    <div style="text-align:center;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <p>Continue writing your blog post here...</p>
+  </section>
+
+  <!-- Comment Section (optional) -->
+  <section class="comments-section" style="margin-top:50px;">
+    <h3>Leave a Comment</h3>
+
+    <!-- Example Disqus (comment plugin, you can set up later) -->
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = document.title;
+      };
+
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      */
+    </script>
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    <!-- End of Disqus -->
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+</footer>
+
+<!-- Hamburger Script -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

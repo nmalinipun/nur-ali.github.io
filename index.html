@@ -7,32 +7,32 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+ <nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="volunteering.html">Volunteering</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
   <header>
     <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
     <p>Doctoral Student | Researcher | Engineer | Traveller</p>
   </header>
 
-  <div style="text-align:center; margin: 20px;">
-    <img src="profile.jpeg" alt="My Profile Picture" style="width:200px; height:auto; border-radius: 10px;">
-  </div>
+<div style="text-align:center; margin: 20px 0 40px 0;">
+  <img src="profile.jpeg" alt="My Profile Picture" style="width:200px; height:auto; border-radius:10px;">
+</div>
 
   <main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-    <img src="profile.jpeg" alt="My Profile Picture" style="width: 180px; height: 180px; border-radius: 50%; margin-bottom: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
 
     <div style="background-color: #f0f8ff; padding: 20px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; max-width: 600px;">
       <h2 style="margin-bottom: 10px;">Hello, I'm Nur Mohammad Ali</h2>
@@ -76,6 +76,13 @@
     }, 3000); // 3 seconds
   </script>
   <!-- Slideshow section ends -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
 
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 </body>
 </html>

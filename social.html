@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social - Nur Mohammad Ali</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .social-container {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    h1 {
+      color: #0a3d62;
+      font-size: 48px;
+      margin-bottom: 40px;
+    }
+    .social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .social-icons a img {
+      width: 60px;
+      height: 60px;
+      transition: transform 0.3s ease;
+    }
+    .social-icons a img:hover {
+      transform: scale(1.2);
+    }
+    .social-icons a {
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background-color: #0a3d62;
+      color: white;
+      margin-top: 60px;
+    }
+    footer a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1>Connect with Me</h1>
-    <p>Follow my journey across social media platforms</p>
-  </header>
+<div class="social-container">
+  <h1>Connect with Me</h1>
 
-  <main>
-    <h2>Social Links</h2>
+  <div class="social-icons">
+    <a href="https://www.facebook.com/yourhandle" target="_blank">
+      <img src="photo/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.linkedin.com/in/nmalinipun" target="_blank">
+      <img src="photo/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://twitter.com/yourhandle" target="_blank">
+      <img src="photo/twitter.png" alt="Twitter">
+    </a>
+    <a href="https://www.instagram.com/yourhandle" target="_blank">
+      <img src="photo/instagram.png" alt="Instagram">
+    </a>
+  </div>
+</div>
 
-    <ul>
-      <li><a href="https://x.com/NurMohammadAli" target="_blank">Follow me on X (Twitter)</a></li>
-      <li><a href="https://instagram.com/nipunmunna" target="_blank">Follow me on Instagram</a></li>
-      <li><a href="https://www.linkedin.com/in/nmalinipun/" target="_blank">Connect on LinkedIn</a></li>
-    </ul>
+<footer>
+  Icons created by
+  <a href="https://www.flaticon.com/free-icons/facebook" target="_blank">Ruslan Babkin</a>,
+  <a href="https://www.flaticon.com/free-icons/linkedin" target="_blank">riajulislam</a>,
+  <a href="https://www.flaticon.com/free-icons/tweet" target="_blank">Freepik</a>,
+  <a href="https://www.flaticon.com/free-icons/instagram" target="_blank">cobynecz</a>
+  - Flaticon
+</footer>
 
-    <p><em>Stay connected for latest research, travel, and life updates!</em></p>
-  </main>
-
-  <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-  </footer>
 </body>
 </html>
