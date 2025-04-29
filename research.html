@@ -2,51 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Tweak header/footer spacing for this page */
-    header {
-      margin-bottom: 20px;
-    }
-    footer {
-      margin-top: 20px;
-    }
-    /* Container for the list of papers */
     .research-container {
       max-width: 900px;
-      margin: 0 auto 40px;
+      margin: 0 auto 50px;
       padding: 0 20px;
     }
-    .paper-list {
+    .research-container ul {
       list-style: none;
       padding: 0;
-      margin: 0;
     }
-    .paper-item {
+    .research-container li {
       display: flex;
       align-items: flex-start;
       gap: 12px;
       margin-bottom: 24px;
     }
-    .paper-item img {
+    .research-container img {
       width: 30px;
       height: 30px;
-      margin-top: 5px;
+      margin-top: 4px;
     }
-    .paper-item a {
-      text-decoration: none;
+    .research-container a {
       color: #004aad;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .paper-item a:hover {
+    .research-container a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <ul id="nav-list">
@@ -63,61 +55,66 @@
     </ul>
   </nav>
 
-  <!-- Page Header -->
+  <!-- Header -->
   <header>
     <h1>Research Publications</h1>
-    <p>Discover the studies and contributions by Nur Mohammad Ali</p>
+    <p>My published and ongoing research projects</p>
   </header>
 
-  <!-- Publications List -->
+  <!-- Research List -->
   <main class="research-container">
-    <ul class="paper-list">
-      <li class="paper-item">
+    <ul>
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
           <strong>Investigation of Gauss-Seidel Method for Load Flow Analysis in Smart Grids</strong><br>
-          <a href="#" target="_blank">View on Google Scholar</a>
+          <a href="#">View on Google Scholar</a>
         </div>
       </li>
-      <li class="paper-item">
+
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
-          <strong>Artificial intelligence and machine learning enhance robot decision-making adaptability and learning capabilities across various domains</strong><br>
-          <a href="#" target="_blank">View on Google Scholar</a>
+          <strong>Artificial Intelligence and Machine Learning Enhance Robot Decision-Making Across Domains</strong><br>
+          <a href="#">View on Google Scholar</a>
         </div>
       </li>
-      <li class="paper-item">
+
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
           <strong>An investigation of the ensemble machine learning techniques for predicting mechanical properties of printed parts in additive manufacturing</strong><br>
-          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=-kEaIB0AAAAJ&amp;citation_for_view=-kEaIB0AAAAJ:9yKSN-GCB0IC" target="_blank">View on Google Scholar</a>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-kEaIB0AAAAJ&citation_for_view=-kEaIB0AAAAJ:9yKSN-GCB0IC" target="_blank">View on Google Scholar</a>
         </div>
       </li>
-      <li class="paper-item">
+
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
           <strong>A long short-term memory network for product quality monitoring in fused deposition modeling</strong><br>
-          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=-kEaIB0AAAAJ&amp;citation_for_view=-kEaIB0AAAAJ:qjMakFHDy7sC" target="_blank">View on Google Scholar</a>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-kEaIB0AAAAJ&citation_for_view=-kEaIB0AAAAJ:qjMakFHDy7sC" target="_blank">View on Google Scholar</a>
         </div>
       </li>
-      <li class="paper-item">
+
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
           <strong>A Fuzzy Inference System for Predicting Air Traffic Demand based on Socioeconomic Drivers</strong><br>
-          <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=-kEaIB0AAAAJ&amp;citation_for_view=-kEaIB0AAAAJ:UeHWp8X0CEIC" target="_blank">View on Google Scholar</a>
+          <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=-kEaIB0AAAAJ&citation_for_view=-kEaIB0AAAAJ:UeHWp8X0CEIC" target="_blank">View on Google Scholar</a>
         </div>
       </li>
-      <li class="paper-item">
+
+      <li>
         <img src="search-analysis.png" alt="Icon">
         <div>
-          <strong>Enhancement Study on Lumen Depreciation &amp; Thermal Management System in Commercial LEDs Bulb from a Product Lifecycle Perspective</strong><br>
+          <strong>Enhancement Study on Lumen Depreciation & Thermal Management in LEDs from a Product Lifecycle Perspective</strong><br>
           <a href="https://www.ieomsociety.org/proceedings/2024johannesburg/222.pdf" target="_blank">Download PDF</a>
         </div>
       </li>
     </ul>
   </main>
 
-  <!-- Page Footer -->
+  <!-- Footer -->
   <footer>
     <p>
       Analysis icons by
@@ -126,13 +123,14 @@
     </p>
   </footer>
 
-  <!-- Hamburger Menu Script -->
+  <!-- Mobile Nav Script -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
-    const navList    = document.getElementById('nav-list');
+    const navList = document.getElementById('nav-list');
     menuToggle.addEventListener('click', () => {
       navList.classList.toggle('active');
     });
   </script>
+
 </body>
 </html>
