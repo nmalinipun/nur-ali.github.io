@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Nur Mohammad Ali - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul id="nav-list">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="volunteering.html">Volunteering</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="social.html">Social</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-  <ul id="nav-list">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="media.html">Media</a></li>
-    <li><a href="volunteering.html">Volunteering</a></li>
-    <li><a href="travel.html">Travel</a></li>
-    <li><a href="social.html">Social</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <header>
+    <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
+    <p>Doctoral Student | Researcher | Engineer | Traveller</p>
+  </header>
 
-<header>
-  <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
-  <p>Doctoral Student | Researcher | Engineer | Traveller</p>
-</header>
-
-<div style="text-align:center; margin: 20px 0;">
-  <img src="profile.jpeg" alt="Profile Picture" style="width:200px; border-radius:10px;">
-</div>
-
-<main style="text-align: center; padding: 20px;">
-  <div style="background-color: #f0f8ff; padding: 20px; border-radius: 12px; max-width: 600px; margin: auto;">
-    <h2>Hello, I'm Nur Mohammad Ali</h2>
-    <p>Welcome to my official website where I share my research, travels, and projects.</p>
+  <div style="text-align:center; margin:20px 0;">
+    <img
+      src="profile.jpeg"
+      alt="Profile Picture"
+      style="width:200px; border-radius:10px;"
+    />
   </div>
-</main>
 
-<footer>
-  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-</footer>
+  <main style="text-align:center; padding:20px;">
+    <div
+      style="background-color:#fff; padding:20px; border-radius:12px; max-width:600px; margin:auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
+    >
+      <h2>Hello, I'm Nur Mohammad Ali</h2>
+      <p>Welcome to my official website where I share my research, travels, and projects.</p>
+    </div>
+  </main>
 
-<h2 style="text-align: center;">Life Moments</h2>
-<p style="text-align: center;">"Dream big, work hard, stay humble."</p>
+  <!-- Life Moments Slideshow -->
+  <h2 style="text-align:center; margin-top:40px;">Life Moments</h2>
+  <p style="text-align:center; font-style:italic;">"Dream big, work hard, stay humble."</p>
+  <div style="text-align:center;">
+    <img id="slideshow" src="life-moments/img1.jpg" alt="Life Moment" />
+  </div>
 
-<div style="text-align: center;">
-  <img id="slideshow" src="life-moments/img1.jpg" alt="Life Moment" style="width:300px; border-radius:10px;">
-</div>
+  <footer>
+    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+  </footer>
 
-<script>
-  const images = [
-    "life-moments/img1.jpg",
-    "life-moments/img2.jpg",
-    "life-moments/img3.jpg",
-    "life-moments/img4.jpg",
-    "life-moments/img5.jpg",
-    "life-moments/img6.jpg",
-    "life-moments/img7.jpg",
-    "life-moments/img8.jpg",
-    "life-moments/img9.jpg",
-    "life-moments/img10.jpg"
-  ];
-  let currentIndex = 0;
-  const imgElement = document.getElementById("slideshow");
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % images.length;
-    imgElement.src = images[currentIndex];
-  }, 3000);
-</script>
+  <script>
+    // Slideshow
+    const images = [
+      'life-moments/img1.jpg','life-moments/img2.jpg','life-moments/img3.jpg',
+      'life-moments/img4.jpg','life-moments/img5.jpg','life-moments/img6.jpg',
+      'life-moments/img7.jpg','life-moments/img8.jpg','life-moments/img9.jpg',
+      'life-moments/img10.jpg'
+    ];
+    let idx = 0;
+    const slide = document.getElementById('slideshow');
+    setInterval(() => {
+      idx = (idx + 1) % images.length;
+      slide.src = images[idx];
+    }, 3000);
 
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navList = document.getElementById('nav-list');
-  menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-</script>
-
+    // Hamburger
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
+  </script>
 </body>
 </html>

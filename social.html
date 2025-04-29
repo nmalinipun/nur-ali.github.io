@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Social - Nur Mohammad Ali</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul id="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="media.html">Media</a></li>
+      <li><a href="volunteering.html">Volunteering</a></li>
+      <li><a href="travel.html">Travel</a></li>
+      <li><a href="social.html" class="active">Social</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<nav>
-  <div class="menu-toggle" id="menu-toggle">☰</div>
-  <ul id="nav-list">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="gallery.html">Gallery</a></li>
-    <li><a href="media.html">Media</a></li>
-    <li><a href="volunteering.html">Volunteering</a></li>
-    <li><a href="travel.html">Travel</a></li>
-    <li><a href="social.html" class="active">Social</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+  <header>
+    <h1>Connect with Me</h1>
+    <p>Follow me on social media platforms</p>
+  </header>
 
-<header>
-  <h1>Connect with Me</h1>
-  <p>Follow me on social media platforms</p>
-</header>
+  <main style="text-align:center; padding:40px 20px;">
+    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:40px;">
+      <a href="#"><img src="facebook.png" alt="Facebook" width="80" /></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn" width="80" /></a>
+      <a href="#"><img src="twitter.png" alt="Twitter" width="80" /></a>
+      <a href="#"><img src="instagram.png" alt="Instagram" width="80" /></a>
+    </div>
+  </main>
 
-<main style="padding: 40px 20px; text-align: center;">
-  <h2>Find me here:</h2>
-  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px;">
-    <a href="#" target="_blank"><img src="facebook.png" alt="Facebook" style="width:50px;"></a>
-    <a href="#" target="_blank"><img src="instagram.png" alt="Instagram" style="width:50px;"></a>
-    <a href="#" target="_blank"><img src="linkedin.png" alt="LinkedIn" style="width:50px;"></a>
-    <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" style="width:50px;"></a>
-  </div>
-</main>
+  <footer>
+    <p>
+      Icons by
+      <a href="https://www.flaticon.com/authors/ruslan-babkin" target="_blank">Ruslan Babkin</a>,
+      <a href="https://www.flaticon.com/authors/rijajulislam" target="_blank">riajulislam</a>,
+      <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>,
+      <a href="https://www.flaticon.com/authors/cobynecz" target="_blank">cobynecz</a>
+      – Flaticon
+    </p>
+  </footer>
 
-<footer>
-  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-</footer>
-
-<script>
-  const menuToggle = document.getElementById('menu-toggle');
-  const navList = document.getElementById('nav-list');
-  menuToggle.addEventListener('click', () => {
-    navList.classList.toggle('active');
-  });
-</script>
-
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navList = document.getElementById('nav-list');
+    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
+  </script>
 </body>
 </html>
