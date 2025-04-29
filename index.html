@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nur Mohammad Ali - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Navigation Bar -->
   <nav>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <ul id="nav-list">
@@ -23,46 +25,45 @@
     </ul>
   </nav>
 
+  <!-- Header Section -->
   <header>
     <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
     <p>Doctoral Student | Researcher | Engineer | Traveller</p>
   </header>
 
+  <!-- Profile Picture -->
   <div style="text-align:center; margin:20px 0;">
-    <img
-      src="profile.jpeg"
-      alt="Profile Picture"
-      style="width:200px; border-radius:10px;"
-    />
+    <img src="profile.jpeg" alt="Profile Picture" style="width:200px; border-radius:10px;" />
   </div>
 
+  <!-- Main Welcome Section -->
   <main style="text-align:center; padding:20px;">
-    <div
-      style="background-color:#fff; padding:20px; border-radius:12px; max-width:600px; margin:auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);"
-    >
+    <div style="background-color:#fff; padding:20px; border-radius:12px; max-width:600px; margin:auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
       <h2>Hello, I'm Nur Mohammad Ali</h2>
       <p>Welcome to my official website where I share my research, travels, and projects.</p>
     </div>
   </main>
 
   <!-- Life Moments Slideshow -->
-  <h2 style="text-align:center; margin-top:40px;">Life Moments</h2>
-  <p style="text-align:center; font-style:italic;">"Dream big, work hard, stay humble."</p>
-  <div style="text-align:center;">
-    <img id="slideshow" src="life-moments/img1.jpg" alt="Life Moment" />
-  </div>
+  <section style="text-align:center; padding:40px 20px;">
+    <h2 style="font-size:28px; color:#004aad;">Life Moments</h2>
+    <p style="font-style:italic; color:#555;">"Dream big, work hard, stay humble."</p>
+    <div>
+      <img id="slideshow" src="img1.jpg" alt="Life Moment" style="width:300px; border-radius:12px; margin-top:20px;" />
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script>
-    // Slideshow
+    // Slideshow Script
     const images = [
-      'life-moments/img1.jpg','life-moments/img2.jpg','life-moments/img3.jpg',
-      'life-moments/img4.jpg','life-moments/img5.jpg','life-moments/img6.jpg',
-      'life-moments/img7.jpg','life-moments/img8.jpg','life-moments/img9.jpg',
-      'life-moments/img10.jpg'
+      'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
+      'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'
     ];
     let idx = 0;
     const slide = document.getElementById('slideshow');
@@ -71,10 +72,13 @@
       slide.src = images[idx];
     }, 3000);
 
-    // Hamburger
+    // Hamburger Menu Script
     const menuToggle = document.getElementById('menu-toggle');
     const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
+    menuToggle.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
   </script>
+
 </body>
 </html>
