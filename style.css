@@ -1,87 +1,109 @@
-/* Basic styles for the website */
+/* General body style */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  background-color: #003366;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+/* Navigation bar */
+nav {
+  background-color: #004aad;
+  padding: 10px 20px;
 }
 
+/* Menu list */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Menu list item */
 nav ul li {
   margin: 0 15px;
 }
 
+/* Menu links */
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 14px 20px;
-  display: block;
+  font-size: 16px;
 }
 
+/* Hover effect on menu */
 nav ul li a:hover {
-  background-color: #0055aa;
-  border-radius: 8px;
+  color: #ffcc00;
 }
 
-/* Header and Main Section */
-header, main, footer {
+/* Header */
+header {
+  background-color: #0077cc;
+  color: white;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+header h1 {
+  margin: 0;
+  font-size: 32px;
 }
 
-/* Slideshow Image */
-#slideshow {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin: 20px auto;
+header p {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
 /* Footer */
 footer {
-  background-color: #003366;
+  background-color: #004aad;
   color: white;
+  text-align: center;
   padding: 10px 0;
+  margin-top: 30px;
 }
 
-/* ----------------------- */
-/* Mobile Responsive Magic */
-/* ----------------------- */
+/* Slideshow image */
+#slideshow {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
+  /* Hide nav list initially */
   nav ul {
+    display: none;
     flex-direction: column;
-    align-items: center;
+    background-color: #004aad;
+    width: 100%;
   }
 
+  /* Show nav list when active */
+  nav ul.active {
+    display: flex;
+  }
+
+  /* Show hamburger menu */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Center nav links in mobile */
   nav ul li {
-    margin: 10px 0;
-  }
-
-  main {
-    padding: 10px;
-  }
-
-  #slideshow {
-    width: 90%; /* Make slideshow image almost full width on small screens */
-  }
-
-  img[alt="My Profile Picture"] {
-    width: 150px;
-    height: 150px;
+    margin: 15px 0;
+    text-align: center;
   }
 }
