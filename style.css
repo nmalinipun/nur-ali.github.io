@@ -1,57 +1,42 @@
+/* Basic styles for the website */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
-  color: #333333;
 }
 
-nav {
-  background-color: #004aad;
-  padding: 10px;
-}
-
+/* Navbar */
 nav ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
+  background-color: #003366;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  padding: 14px 20px;
+  display: block;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #0055aa;
+  border-radius: 8px;
 }
 
-header {
-  background-color: #007acc;
-  color: white;
-  padding: 30px;
+/* Header and Main Section */
+header, main, footer {
   text-align: center;
-}
-
-main {
   padding: 20px;
-}
-
-footer {
-  background-color: #004aad;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
 img {
@@ -59,7 +44,44 @@ img {
   height: auto;
 }
 
-iframe {
-  max-width: 100%;
-  border: none;
+/* Slideshow Image */
+#slideshow {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 10px 0;
+}
+
+/* ----------------------- */
+/* Mobile Responsive Magic */
+/* ----------------------- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  #slideshow {
+    width: 90%; /* Make slideshow image almost full width on small screens */
+  }
+
+  img[alt="My Profile Picture"] {
+    width: 150px;
+    height: 150px;
+  }
 }
