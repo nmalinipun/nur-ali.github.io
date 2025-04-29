@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social</title>
   <link rel="stylesheet" href="style.css">
   <style>
@@ -12,32 +12,40 @@
       margin: 0;
       padding: 0;
     }
-    .social-container {
+    .header {
+      background-color: #0a3d62;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
-      padding: 80px 20px;
     }
-    h1 {
-      color: #0a3d62;
+    .header h1 {
       font-size: 48px;
-      margin-bottom: 40px;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .social-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
     }
     .social-icons {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
+      gap: 40px;
+      flex-wrap: wrap;
       margin-top: 40px;
     }
     .social-icons a img {
-      width: 60px;
-      height: 60px;
+      width: 80px;
+      height: 80px;
       transition: transform 0.3s ease;
     }
     .social-icons a img:hover {
-      transform: scale(1.2);
-    }
-    .social-icons a {
-      text-decoration: none;
+      transform: scale(1.1);
     }
     footer {
       text-align: center;
@@ -55,31 +63,26 @@
 </head>
 <body>
 
-<div class="social-container">
+<div class="header">
   <h1>Connect with Me</h1>
+  <p>Follow me on social media platforms</p>
+</div>
 
+<div class="social-container">
   <div class="social-icons">
-    <a href="https://www.facebook.com/yourhandle" target="_blank">
-      <img src="photo/facebook.png" alt="Facebook">
-    </a>
-    <a href="https://www.linkedin.com/in/nmalinipun" target="_blank">
-      <img src="photo/linkedin.png" alt="LinkedIn">
-    </a>
-    <a href="https://twitter.com/yourhandle" target="_blank">
-      <img src="photo/twitter.png" alt="Twitter">
-    </a>
-    <a href="https://www.instagram.com/yourhandle" target="_blank">
-      <img src="photo/instagram.png" alt="Instagram">
-    </a>
+    <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+    <a href="#" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+    <a href="#" target="_blank"><img src="twitter.png" alt="Twitter"></a>
+    <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
   </div>
 </div>
 
 <footer>
   Icons created by
-  <a href="https://www.flaticon.com/free-icons/facebook" target="_blank">Ruslan Babkin</a>,
-  <a href="https://www.flaticon.com/free-icons/linkedin" target="_blank">riajulislam</a>,
-  <a href="https://www.flaticon.com/free-icons/tweet" target="_blank">Freepik</a>,
-  <a href="https://www.flaticon.com/free-icons/instagram" target="_blank">cobynecz</a>
+  <a href="https://www.flaticon.com/authors/ruslan-babkin" target="_blank">Ruslan Babkin</a>,
+  <a href="https://www.flaticon.com/authors/rijajulislam" target="_blank">riajulislam</a>,
+  <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>,
+  <a href="https://www.flaticon.com/authors/cobynecz" target="_blank">cobynecz</a>
   - Flaticon
 </footer>
 
