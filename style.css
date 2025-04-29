@@ -1,31 +1,29 @@
-/* General body style */
+/* Body */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 nav {
   background-color: #004aad;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
-/* Menu list */
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-/* Menu list item */
 nav ul li {
   margin: 0 15px;
 }
 
-/* Menu links */
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -33,27 +31,26 @@ nav ul li a {
   font-size: 16px;
 }
 
-/* Hover effect on menu */
 nav ul li a:hover {
   color: #ffcc00;
 }
 
-/* Header */
+/* Header Section */
 header {
-  background-color: #0077cc;
+  background-color: #004aad;
   color: white;
   text-align: center;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 32px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 header p {
-  margin-top: 10px;
-  font-size: 18px;
+  font-size: 20px;
+  margin-top: 0;
 }
 
 /* Footer */
@@ -61,49 +58,38 @@ footer {
   background-color: #004aad;
   color: white;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 30px;
+  padding: 20px;
+  margin-top: 60px;
 }
 
-/* Slideshow image */
+/* Slideshow */
 #slideshow {
   width: 300px;
   height: auto;
   border-radius: 10px;
-  margin-top: 20px;
 }
 
-/* Hamburger menu button */
+/* Responsive Hamburger Menu */
 .menu-toggle {
   display: none;
   font-size: 28px;
-  color: white;
   cursor: pointer;
+  padding: 10px 20px;
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
-  /* Hide nav list initially */
   nav ul {
     display: none;
     flex-direction: column;
-    background-color: #004aad;
-    width: 100%;
+    align-items: center;
   }
 
-  /* Show nav list when active */
   nav ul.active {
     display: flex;
   }
 
-  /* Show hamburger menu */
   .menu-toggle {
     display: block;
-  }
-
-  /* Center nav links in mobile */
-  nav ul li {
-    margin: 15px 0;
-    text-align: center;
+    color: white;
   }
 }
