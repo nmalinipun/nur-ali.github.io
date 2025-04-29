@@ -3,78 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volunteering</title>
+  <title>Volunteering - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #f0f4f8;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .header p {
-      font-size: 20px;
-      margin-top: 0;
-    }
-    .volunteering-container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      text-align: center;
-    }
-    p.description {
-      font-size: 22px;
-      color: #555;
-      margin-bottom: 40px;
-    }
-    .volunteering-photos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .volunteering-photos img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-    }
-    .volunteering-photos img:hover {
-      transform: scale(1.05);
-    }
-  </style>
 </head>
 <body>
 
-<div class="header">
+<!-- Navigation Bar -->
+<nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="volunteering.html" class="active">Volunteering</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Header -->
+<header>
   <h1>Volunteering Activities</h1>
   <p>Giving back to the community has always been a core part of my values</p>
-</div>
+</header>
 
-<div class="volunteering-container">
-  <p class="description">
+<!-- Volunteering Section -->
+<main style="padding: 40px 20px; text-align: center;">
+  <p style="font-size: 22px; color: #555; margin-bottom: 40px;">
     Volunteering allows me to connect, inspire, and contribute to causes bigger than myself.
     Here are some moments captured during my volunteering experiences.
   </p>
 
-  <div class="volunteering-photos">
-    <img src="photo/life-moments/volunteer1.png" alt="Volunteering Photo 1">
-    <img src="photo/life-moments/volunteer2.png" alt="Volunteering Photo 2">
-    <img src="photo/life-moments/volunteer3.png" alt="Volunteering Photo 3">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <img src="life-moments/volunteer1.png" alt="Volunteering Photo 1" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition:transform 0.3s ease;">
+    <img src="life-moments/volunteer2.png" alt="Volunteering Photo 2" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition:transform 0.3s ease;">
+    <img src="life-moments/volunteer3.png" alt="Volunteering Photo 3" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2); transition:transform 0.3s ease;">
   </div>
-</div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+</footer>
+
+<!-- Hamburger Menu Script -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
