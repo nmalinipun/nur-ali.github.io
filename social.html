@@ -3,67 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social</title>
+  <title>Social - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #f0f4f8;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .header p {
-      font-size: 20px;
-      margin-top: 0;
-    }
-    .social-container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-      text-align: center;
-    }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-      margin-top: 40px;
-    }
-    .social-icons a img {
-      width: 80px;
-      height: 80px;
-      transition: transform 0.3s ease;
-    }
-    .social-icons a img:hover {
-      transform: scale(1.1);
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
-      background-color: #0a3d62;
-      color: white;
-      margin-top: 60px;
-    }
-    footer a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
+
 <nav>
-  <ul>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="research.html">Research</a></li>
@@ -72,32 +19,37 @@
     <li><a href="media.html">Media</a></li>
     <li><a href="volunteering.html">Volunteering</a></li>
     <li><a href="travel.html">Travel</a></li>
-    <li><a href="social.html">Social</a></li>
+    <li><a href="social.html" class="active">Social</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-<div class="header">
+
+<header>
   <h1>Connect with Me</h1>
   <p>Follow me on social media platforms</p>
-</div>
+</header>
 
-<div class="social-container">
-  <div class="social-icons">
-    <a href="#" target="_blank"><img src="facebook.png" alt="Facebook"></a>
-    <a href="#" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-    <a href="#" target="_blank"><img src="twitter.png" alt="Twitter"></a>
-    <a href="#" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+<main style="padding: 40px 20px; text-align: center;">
+  <h2>Find me here:</h2>
+  <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 30px;">
+    <a href="#" target="_blank"><img src="facebook.png" alt="Facebook" style="width:50px;"></a>
+    <a href="#" target="_blank"><img src="instagram.png" alt="Instagram" style="width:50px;"></a>
+    <a href="#" target="_blank"><img src="linkedin.png" alt="LinkedIn" style="width:50px;"></a>
+    <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" style="width:50px;"></a>
   </div>
-</div>
+</main>
 
 <footer>
-  Icons created by
-  <a href="https://www.flaticon.com/authors/ruslan-babkin" target="_blank">Ruslan Babkin</a>,
-  <a href="https://www.flaticon.com/authors/rijajulislam" target="_blank">riajulislam</a>,
-  <a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a>,
-  <a href="https://www.flaticon.com/authors/cobynecz" target="_blank">cobynecz</a>
-  - Flaticon
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>

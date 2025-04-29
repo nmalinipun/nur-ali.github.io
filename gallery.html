@@ -7,40 +7,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
-  <header>
-    <h1>Gallery</h1>
-    <p>My journey through memories, travels, and achievements</p>
-  </header>
+<nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="gallery.html" class="active">Gallery</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="volunteering.html">Volunteering</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <h2>Photos</h2>
+<header>
+  <h1>Gallery</h1>
+  <p>My journey through memories, travels, and achievements</p>
+</header>
 
-    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-      <img src="gallery/photo1.jpg" alt="Gallery Photo 1" width="300">
-      <img src="gallery/photo2.jpg" alt="Gallery Photo 2" width="300">
-      <img src="gallery/photo3.jpg" alt="Gallery Photo 3" width="300">
-    </div>
+<main style="padding: 40px 20px; text-align: center;">
+  <h2>Coming Soon!</h2>
+  <p>Exciting photos and moments will be shared here.</p>
+</main>
 
-    <p><em>Note: You can easily add or remove photos later by updating this page!</em></p>
-  </main>
+<footer>
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+</footer>
 
-  <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-  </footer>
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

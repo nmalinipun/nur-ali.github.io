@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <nav>
   <div class="menu-toggle" id="menu-toggle">☰</div>
   <ul id="nav-list">
@@ -25,62 +24,54 @@
   </ul>
 </nav>
 
-<!-- Header -->
 <header>
   <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
   <p>Doctoral Student | Researcher | Engineer | Traveller</p>
 </header>
 
-<!-- Profile Picture -->
-<div style="text-align:center; margin: 20px 0 40px 0;">
-  <img src="profile.jpeg" alt="My Profile Picture" style="width:200px; height:auto; border-radius:10px;">
+<div style="text-align:center; margin: 20px 0;">
+  <img src="profile.jpeg" alt="Profile Picture" style="width:200px; border-radius:10px;">
 </div>
 
-<!-- Main Intro Section -->
-<main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
-  <div style="background-color: #f0f8ff; padding: 20px 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; max-width: 600px;">
-    <h2 style="margin-bottom: 10px;">Hello, I'm Nur Mohammad Ali</h2>
-    <p>Doctoral Student | Researcher | Engineer | Traveller</p>
-    <p>Welcome to my official website where I share my research, travels, and projects. Feel free to explore!</p>
+<main style="text-align: center; padding: 20px;">
+  <div style="background-color: #f0f8ff; padding: 20px; border-radius: 12px; max-width: 600px; margin: auto;">
+    <h2>Hello, I'm Nur Mohammad Ali</h2>
+    <p>Welcome to my official website where I share my research, travels, and projects.</p>
   </div>
 </main>
 
-<!-- Footer -->
 <footer>
   <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
 </footer>
 
-<!-- Life Moments Slideshow -->
 <h2 style="text-align: center;">Life Moments</h2>
-<p style="text-align: center; font-style: italic; margin-top: 20px;">"Dream big, work hard, stay humble."</p>
+<p style="text-align: center;">"Dream big, work hard, stay humble."</p>
+
 <div style="text-align: center;">
-  <img id="slideshow" src="img1.jpg" alt="Life Moment" style="width:300px; height:auto; border-radius:10px;">
+  <img id="slideshow" src="life-moments/img1.jpg" alt="Life Moment" style="width:300px; border-radius:10px;">
 </div>
 
-<!-- Slideshow Script -->
 <script>
   const images = [
-    "img1.jpg",
-    "img2.jpg",
-    "img3.jpg",
-    "img4.jpg",
-    "img5.jpg",
-    "img6.jpg",
-    "img7.jpg",
-    "img8.jpg",
-    "img9.jpg",
-    "img10.jpg"
+    "life-moments/img1.jpg",
+    "life-moments/img2.jpg",
+    "life-moments/img3.jpg",
+    "life-moments/img4.jpg",
+    "life-moments/img5.jpg",
+    "life-moments/img6.jpg",
+    "life-moments/img7.jpg",
+    "life-moments/img8.jpg",
+    "life-moments/img9.jpg",
+    "life-moments/img10.jpg"
   ];
   let currentIndex = 0;
   const imgElement = document.getElementById("slideshow");
-
   setInterval(() => {
     currentIndex = (currentIndex + 1) % images.length;
     imgElement.src = images[currentIndex];
   }, 3000);
 </script>
 
-<!-- Hamburger Menu Script -->
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const navList = document.getElementById('nav-list');

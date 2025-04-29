@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- Navigation Bar -->
 <nav>
   <div class="menu-toggle" id="menu-toggle">☰</div>
   <ul id="nav-list">
@@ -25,68 +24,23 @@
   </ul>
 </nav>
 
-<!-- Blog Header -->
-<header class="page-header">
+<header>
   <h1>My Blog</h1>
   <p>Stories, Experiences, and Insights</p>
 </header>
 
-<!-- Blog Content -->
-<main style="padding: 40px 20px;">
-  <section class="blog-section">
-    <h2>Blog Post Title Example</h2>
-    <p style="font-style: italic; color: gray;">Published on April 27, 2025</p>
-
-    <img src="images/blog-sample.jpg" alt="Blog Image" style="width:100%; max-width:600px; margin:20px auto; display:block; border-radius:8px;">
-
-    <p>This is where you can start writing your blog content. You can also embed YouTube videos, upload images, or format text into paragraphs.</p>
-
-    <p>Example embedded video below:</p>
-
-    <div style="text-align:center;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-      title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-    <p>Continue writing your blog post here...</p>
-  </section>
-
-  <!-- Comment Section (optional) -->
-  <section class="comments-section" style="margin-top:50px;">
-    <h3>Leave a Comment</h3>
-
-    <!-- Example Disqus (comment plugin, you can set up later) -->
-    <div id="disqus_thread"></div>
-    <script>
-      /**
-      var disqus_config = function () {
-        this.page.url = window.location.href;
-        this.page.identifier = document.title;
-      };
-
-      (function() {
-        var d = document, s = d.createElement('script');
-        s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-      })();
-      */
-    </script>
-    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    <!-- End of Disqus -->
-  </section>
+<main style="padding: 40px 20px; text-align: center;">
+  <h2>Coming Soon!</h2>
+  <p>I am preparing amazing blogs about travel, research, and innovation.</p>
 </main>
 
-<!-- Footer -->
 <footer>
   <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
 </footer>
 
-<!-- Hamburger Script -->
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const navList = document.getElementById('nav-list');
-
   menuToggle.addEventListener('click', () => {
     navList.classList.toggle('active');
   });

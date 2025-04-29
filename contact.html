@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            background-color: #f0f4f8;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .contact-container {
-            text-align: center;
-            padding: 80px 20px;
-        }
-        h1 {
-            color: #0a3d62;
-            font-size: 48px;
-            margin-bottom: 40px;
-        }
-        .email-link {
-            display: block;
-            margin: 20px 0;
-            font-size: 28px;
-            font-weight: bold;
-            color: #0a3d62;
-            text-decoration: none;
-            transition: color 0.3s ease, text-decoration 0.3s ease;
-        }
-        .email-link:hover {
-            color: #07406e;
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Nur Mohammad Ali</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="contact-container">
-    <h1>Contact Me</h1>
+<nav>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="media.html">Media</a></li>
+    <li><a href="volunteering.html">Volunteering</a></li>
+    <li><a href="travel.html">Travel</a></li>
+    <li><a href="social.html">Social</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
 
-    <a href="mailto:nipun.nur@gmail.com" class="email-link">nipun.nur@gmail.com</a>
-    <a href="mailto:nali4@lamar.edu" class="email-link">nali4@lamar.edu</a>
-</div>
+<header>
+  <h1>Contact Me</h1>
+  <p>Let's connect! Feel free to reach out anytime.</p>
+</header>
+
+<main style="padding: 40px 20px; text-align: center;">
+  <h2>Email Me</h2>
+  <p style="margin-top:20px;">
+    <a href="mailto:nipun.nur@gmail.com" style="font-size: 20px;">nipun.nur@gmail.com</a><br>
+    <a href="mailto:nali4@lamar.edu" style="font-size: 20px;">nali4@lamar.edu</a>
+  </p>
+</main>
+
+<footer>
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>

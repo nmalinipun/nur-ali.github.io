@@ -1,84 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Research</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #f0f4f8;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background-color: #0a3d62;
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    .header p {
-      font-size: 20px;
-      margin-top: 0;
-    }
-    .research-container {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 20px;
-    }
-    .paper-list {
-      list-style: none;
-      padding: 0;
-    }
-    .paper-item {
-      margin-bottom: 30px;
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-    .paper-item img {
-      width: 30px;
-      height: 30px;
-      margin-top: 5px;
-    }
-    .paper-item div {
-      flex: 1;
-    }
-    .paper-item a {
-      display: inline-block;
-      margin-top: 5px;
-      color: #0a3d62;
-      font-size: 16px;
-      text-decoration: none;
-    }
-    .paper-item a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
-      background-color: #0a3d62;
-      color: white;
-      margin-top: 60px;
-    }
-    footer a {
-      color: #ffffff;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
+
 <nav>
-  <ul>
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul id="nav-list">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
-    <li><a href="research.html">Research</a></li>
+    <li><a href="research.html" class="active">Research</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="gallery.html">Gallery</a></li>
     <li><a href="media.html">Media</a></li>
@@ -88,61 +23,48 @@
     <li><a href="contact.html">Contact</a></li>
   </ul>
 </nav>
-<div class="header">
-  <h1>Research Publications</h1>
-  <p>Discover the studies and contributions by Nur Mohammad Ali</p>
-</div>
 
-<div class="research-container">
-  <ul class="paper-list">
-    <li class="paper-item">
-      <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>Investigation of Gauss-Seidel Method for Load Flow Analysis in Smart Grids</strong><br>
-        <a href="#" target="_blank">View on Google Scholar</a>
-      </div>
+<header>
+  <h1>Research Publications</h1>
+  <p>Discover the studies and contributions</p>
+</header>
+
+<main style="padding: 40px 20px;">
+  <ul style="list-style-type: none; padding: 0;">
+    <li style="margin-bottom: 20px;">
+      <img src="search-analysis.png" alt="Research Icon" style="width: 32px; vertical-align: middle;">
+      <strong>Investigation of Gauss-Seidel Method for Load Flow Analysis in Smart Grids</strong><br>
+      <a href="#" target="_blank">View on Google Scholar</a>
     </li>
-    <li class="paper-item">
-     <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>Artificial intelligence and machine learning enhance robot decision-making adaptability and learning capabilities across various domains</strong><br>
-        <a href="#" target="_blank">View on Google Scholar</a>
-      </div>
+    <li style="margin-bottom: 20px;">
+      <img src="search-analysis.png" alt="Research Icon" style="width: 32px; vertical-align: middle;">
+      <strong>Artificial intelligence and machine learning enhance robot decision-making adaptability and learning capabilities across various domains</strong><br>
+      <a href="#" target="_blank">View on Google Scholar</a>
     </li>
-    <li class="paper-item">
-      <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>An investigation of the ensemble machine learning techniques for predicting mechanical properties of printed parts in additive manufacturing</strong><br>
-        <a href="#" target="_blank">View on Google Scholar</a>
-      </div>
+    <li style="margin-bottom: 20px;">
+      <img src="search-analysis.png" alt="Research Icon" style="width: 32px; vertical-align: middle;">
+      <strong>An investigation of ensemble machine learning techniques for predicting mechanical properties of printed parts in additive manufacturing</strong><br>
+      <a href="#" target="_blank">View on Google Scholar</a>
     </li>
-    <li class="paper-item">
-      <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>A long short-term memory network for product quality monitoring in fused deposition modeling</strong><br>
-        <a href="#" target="_blank">View on Google Scholar</a>
-      </div>
-    </li>
-    <li class="paper-item">
-      <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>A Fuzzy Inference System for Predicting Air Traffic Demand based on Socioeconomic Drivers</strong><br>
-        <a href="#" target="_blank">View on Google Scholar</a>
-      </div>
-    </li>
-    <li class="paper-item">
-      <img src="search-analysis.png" alt="Research Icon">
-      <div>
-        <strong>Enhancement Study on Lumen Depreciation & Thermal Management System in Commercial LEDs Bulb from a Product Lifecycle Perspective</strong><br>
-        <a href="#" target="_blank">View Full Paper (PDF)</a>
-      </div>
+    <li style="margin-bottom: 20px;">
+      <img src="search-analysis.png" alt="Research Icon" style="width: 32px; vertical-align: middle;">
+      <strong>A long short-term memory network for product quality monitoring in fused deposition modeling</strong><br>
+      <a href="#" target="_blank">View on Google Scholar</a>
     </li>
   </ul>
-</div>
+</main>
 
 <footer>
-  Analysis icons created by <a href="https://www.flaticon.com/free-icons/analysis" target="_blank">Vectors Tank</a> - Flaticon
+  <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
 </footer>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  menuToggle.addEventListener('click', () => {
+    navList.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
