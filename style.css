@@ -1,6 +1,83 @@
-/* ===== Polished Title & Subtitle Centering ===== */
+/* ===== Base Layout ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f8ff;
+  color: #111;
+}
 
-/* Global page title styling */
+h1, h2, h3 {
+  color: #004aad;
+}
+
+nav {
+  background-color: #004aad;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 5px 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+  }
+  #nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  #nav-list.active {
+    display: flex;
+  }
+}
+
+/* Header & Footer */
+header, footer {
+  text-align: center;
+  padding: 20px 15px;
+}
+footer {
+  background-color: #004aad;
+  color: white;
+  margin-top: 60px;
+}
+
+/* Welcome Card */
+main div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== Polished Title & Subtitle Centering ===== */
 header h1, section h1, section h2, main h2 {
   text-align: center;
   font-size: 32px;
@@ -10,7 +87,6 @@ header h1, section h1, section h2, main h2 {
   margin-top: 30px;
 }
 
-/* Global subtitle styling */
 header p, section > p, main > p {
   text-align: center;
   font-size: 18px;
@@ -21,12 +97,50 @@ header p, section > p, main > p {
   line-height: 1.6;
 }
 
-/* Make sure all sections have some padding */
 section {
   padding: 20px 20px;
 }
-
-/* Optional: Add subtle spacing to section blocks */
 section:not(:last-child) {
   margin-bottom: 40px;
+}
+
+/* ===== Icon Styling for Social Section ===== */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.icon-row img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.2s ease;
+}
+.icon-row img:hover {
+  transform: scale(1.1);
+}
+
+.icon-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.icon-grid div {
+  text-align: center;
+  width: 120px;
+}
+.icon-grid img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+.icon-grid img:hover {
+  transform: scale(1.1);
+}
+.icon-grid p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #000;
 }
