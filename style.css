@@ -1,133 +1,32 @@
-/* Global Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f5f9ff;
-  color: #111;
-}
+/* ===== Polished Title & Subtitle Centering ===== */
 
-h1, h2, h3 {
+/* Global page title styling */
+header h1, section h1, section h2, main h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
   color: #004aad;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
-/* Navigation Bar */
-nav {
-  background-color: #004aad;
-  padding: 10px 20px;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-nav li {
-  margin: 5px 15px;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-.menu-toggle {
-  display: none;
-}
-
-/* Responsive Nav */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    color: white;
-    font-size: 24px;
-    text-align: right;
-    cursor: pointer;
-  }
-  #nav-list {
-    display: none;
-    flex-direction: column;
-  }
-  #nav-list.active {
-    display: flex;
-  }
-}
-
-/* Footer */
-footer {
+/* Global subtitle styling */
+header p, section > p, main > p {
   text-align: center;
-  background-color: #004aad;
-  color: white;
-  padding: 20px 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  margin-top: 40px;
-}
-
-/* Welcome Card */
-main div {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  max-width: 600px;
-  margin: auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Social Media Sections */
-.connect-section {
-  text-align: center;
-  margin: 50px auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
   max-width: 900px;
-}
-.connect-section h2 {
-  color: #004aad;
-  margin-bottom: 25px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
 }
 
-/* Social icons row */
-.icon-row {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+/* Make sure all sections have some padding */
+section {
+  padding: 20px 20px;
+}
+
+/* Optional: Add subtle spacing to section blocks */
+section:not(:last-child) {
   margin-bottom: 40px;
-}
-.icon-row img {
-  width: 70px;
-  height: 70px;
-  transition: transform 0.2s ease;
-}
-.icon-row img:hover {
-  transform: scale(1.1);
-}
-
-/* Research section icons */
-.icon-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-.icon-grid div {
-  text-align: center;
-  width: 120px;
-}
-.icon-grid img {
-  width: 60px;
-  height: 60px;
-  transition: transform 0.3s ease;
-}
-.icon-grid img:hover {
-  transform: scale(1.1);
-}
-.icon-grid p {
-  margin-top: 10px;
-  font-weight: bold;
-  color: #000;
 }
