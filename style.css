@@ -1,103 +1,52 @@
-/* Reset & Body */
-* {
-  box-sizing: border-box;
+/* Social Media Sections */
+.connect-section {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 900px;
 }
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f4f8;
+.connect-section h2 {
+  color: #004aad;
+  margin-bottom: 25px;
 }
 
-/* Wrapper for sticky footer */
-.wrapper {
-  min-height: 100%;
+/* Social icons row (travel/life section) */
+.icon-row {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.icon-row img {
+  width: 70px;
+  height: 70px;
+  transition: transform 0.2s ease;
+}
+.icon-row img:hover {
+  transform: scale(1.1);
 }
 
-main {
-  flex: 1;
-}
-
-/* Navigation Bar */
-nav {
-  background-color: #004aad;
-  padding: 10px 0;
-}
-nav ul {
-  list-style: none;
+/* Research section icons */
+.icon-grid {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+  gap: 40px;
 }
-nav ul li {
-  margin: 0 15px;
+.icon-grid div {
+  text-align: center;
+  width: 120px;
 }
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.icon-grid img {
+  width: 60px;
+  height: 60px;
+  transition: transform 0.3s ease;
+}
+.icon-grid img:hover {
+  transform: scale(1.1);
+}
+.icon-grid p {
+  margin-top: 10px;
   font-weight: bold;
-  font-size: 16px;
-}
-nav ul li a:hover,
-nav ul li a.active {
-  color: #ffcc00;
-}
-
-/* Hamburger toggle (mobile) */
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  color: #fff;
-  cursor: pointer;
-  padding: 0 20px;
-}
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background-color: #004aad;
-  }
-  nav ul.active {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  nav ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-}
-
-/* Header (all pages) */
-header {
-  background-color: #004aad;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-header h1 {
-  margin: 0 0 8px;
-  font-size: 32px;
-}
-header p {
-  margin: 0;
-  font-size: 16px;
-}
-
-/* Footer (all pages) */
-footer {
-  background-color: #004aad;
-  color: #fff;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 14px;
+  color: #000;
 }
