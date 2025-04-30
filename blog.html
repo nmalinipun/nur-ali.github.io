@@ -30,21 +30,55 @@
       <p>Stories, Experiences, and Insights</p>
     </header>
 
-    <main style="text-align:center; padding:40px 20px;">
-      <h2>Coming Soon!</h2>
-      <p>I am preparing amazing blogs about travel, research, and innovation.</p>
+    <main style="padding: 40px 20px;">
+      <section class="blog-post" style="max-width: 800px; margin: auto; text-align: left;">
+        <h2>🌄 Peace Above the Clouds: A Journey to Clingmans Dome</h2>
+        <p><strong>Date:</strong> April 30, 2025 | <strong>Author:</strong> Nur Mohammad Ali</p>
+
+        <img src="clingmans-dome.jpg" alt="Clingmans Dome View" style="width:100%; border-radius:10px; margin: 20px 0;" />
+
+        <p>We were three doctoral students searching for peace after a long semester. The Smoky Mountains gave us exactly that. As we climbed to Clingmans Dome, we felt a deep sense of stillness. The view at sunset was magical — clouds floating beneath us, the wind whispering like poetry. I felt grateful to be alive and a student in the USA.</p>
+
+        <p>The adventure reminded me that we must take breaks and admire the world beyond screens and deadlines. Let this short documentary show you the beauty of nature and how it touched our hearts.</p>
+
+        <video width="100%" controls style="border-radius:10px; margin: 20px 0;">
+          <source src="clingmans-trip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <p>If you loved this post, please share with friends using the buttons below. ❤️</p>
+
+        <!-- Social Share -->
+        <div style="margin: 20px 0;">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://nur-ali.com/blog.html" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Share on Facebook" width="32" />
+          </a>
+          <a href="mailto:?subject=A blog from Nur Mohammad Ali&body=Check out this story: https://nur-ali.com/blog.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Share via Gmail" width="32" style="margin-left: 10px;" />
+          </a>
+        </div>
+
+        <!-- Facebook Comments -->
+        <div id="fb-root"></div>
+        <div class="fb-comments" data-href="https://nur-ali.com/blog.html" data-width="100%" data-numposts="5"></div>
+      </section>
     </main>
 
     <footer>
       <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
     </footer>
-
   </div>
 
+  <!-- Hamburger Toggle Script -->
   <script>
     const menuToggle = document.getElementById('menu-toggle');
     const navList = document.getElementById('nav-list');
     menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
   </script>
+
+  <!-- Facebook SDK -->
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0"
+    nonce="FbComments"></script>
 </body>
 </html>
