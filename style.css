@@ -2,11 +2,25 @@
 * {
   box-sizing: border-box;
 }
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0f4f8;
+}
+
+/* Wrapper for sticky footer */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 /* Navigation Bar */
@@ -67,8 +81,8 @@ header {
   background-color: #004aad;
   color: #fff;
   text-align: center;
-  padding: 20px;        /* smaller vertical padding */
-  margin-bottom: 30px;  /* gap below header */
+  padding: 20px;
+  margin-bottom: 30px;
 }
 header h1 {
   margin: 0 0 8px;
@@ -85,14 +99,5 @@ footer {
   color: #fff;
   text-align: center;
   padding: 15px 0;
-  margin-top: 40px;    /* gap above footer */
   font-size: 14px;
-}
-
-/* Slideshow (index.html) */
-#slideshow {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  margin-top: 20px;
 }
