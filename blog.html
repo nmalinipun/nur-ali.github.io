@@ -5,6 +5,21 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Blog - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .blog-post {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .blog-post img {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -33,50 +48,48 @@
     </header>
 
     <!-- Blog Content -->
-    <main style="padding: 40px 20px;">
-      <section class="blog-post" style="max-width: 800px; margin: auto; text-align: left;">
+    <main>
+      <section class="blog-post">
         <h2>✈️ New Beginnings: My First Step into American Academic Life</h2>
         <p><strong>Date:</strong> January 22, 2023 | <strong>Author:</strong> Nur Mohammad Ali</p>
 
-        <img src="IMG_8049.jpg" alt="Flight to USA" style="width:100%; border-radius:10px; margin: 20px 0;" />
+        <img src="IMG_8049.jpg" alt="Flight to USA" />
 
         <p>On January 22, 2023, I landed at George Bush Intercontinental Airport in Houston, Texas, at 7:00 PM. That moment changed my life. As I stepped off the plane, the first thing I saw was the glowing sign — <strong>“Welcome to Houston.”</strong></p>
 
-        <img src="IMG_8083.jpg" alt="Welcome to Houston Sign" style="width:100%; border-radius:10px; margin: 20px 0;" />
+        <img src="IMG_8083.jpg" alt="Welcome to Houston Sign" />
 
         <p>Though excited, I faced a small challenge at immigration. My classes had already started on January 17th, and the officer took me to a separate room. Thankfully, I had a <strong>late arrival permission letter</strong> from my university. After reading it, the officer smiled and welcomed me warmly. I realized how important it is for F1 students to carry all necessary documents.</p>
 
         <p>My good friend Richard from <strong>JCI</strong> came all the way to pick me up. A true gentleman with a kind heart, he dropped me off at my new apartment, <strong>The Edge in Beaumont</strong>. It was a four-bedroom apartment shared with six Bangladeshi roommates. We were all excited to start our first semester together!</p>
 
-        <img src="IMG_8101.jpg" alt="Flags Representing Cultural Diversity" style="width:100%; border-radius:10px; margin: 20px 0;" />
+        <img src="IMG_8101.jpg" alt="Flags Representing Cultural Diversity" />
 
         <p>The very next day, I had my first meal at the <strong>Catholic Student Center</strong>. It was delicious, but even more heartwarming was meeting <strong>Father Rodel</strong>. His generosity and hospitality reminded me of home. That experience became a symbol of kindness in my new journey.</p>
 
-        <img src="IMG_8121.jpg" alt="Working at the Student Center" style="width:100%; border-radius:10px; margin: 20px 0;" />
-        <img src="IMG_8123.jpg" alt="First Meal in the USA" style="width:100%; border-radius:10px; margin: 20px 0;" />
+        <img src="IMG_8123.jpg" alt="Meal inside Catholic Student Center" />
+        <img src="IMG_8124.jpg" alt="Burger and Pepsi - First Meal in the USA" />
 
         <p>That’s how my story in the United States began — filled with uncertainty, excitement, friendship, food, and faith. I started this journey as an <strong>F1 student</strong>, and I carry with me not just dreams, but deep gratitude for every person who supported me.</p>
 
         <p>To all new international students — don’t worry if things feel overwhelming. Keep your documents ready, accept help with an open heart, and most of all — believe in your journey.</p>
 
-        <!-- Social Share -->
+        <!-- Share Buttons -->
         <h3 style="margin-top: 40px;">📤 Share this blog</h3>
-        <div style="margin: 10px 0;">
+        <div>
           <a href="https://www.facebook.com/sharer/sharer.php?u=https://nur-ali.com/blog.html" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Share on Facebook" width="32" />
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" width="32" alt="Facebook" />
           </a>
-          <a href="mailto:?subject=Check this blog by Nur Mohammad Ali&body=Read this inspiring story: https://nur-ali.com/blog.html" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Share via Gmail" width="32" style="margin-left: 10px;" />
+          <a href="mailto:?subject=Check this blog by Nur Mohammad Ali&body=Read this inspiring story: https://nur-ali.com/blog.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="32" style="margin-left:10px;" alt="Gmail" />
           </a>
         </div>
 
-        <!-- Comments Section -->
+        <!-- Comments -->
         <h3 style="margin-top: 40px;">💬 Leave a Comment</h3>
-        <!-- Facebook Comment Plugin -->
         <div id="fb-root"></div>
         <script async defer crossorigin="anonymous"
-          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
-          nonce="FbApp">
+          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="FbApp">
         </script>
         <div class="fb-comments"
              data-href="https://nur-ali.com/blog.html"
@@ -84,9 +97,8 @@
              data-numposts="5">
         </div>
 
-        <!-- Optional: Email Comments -->
         <p style="margin-top: 20px;">
-          Prefer email? You can send your thoughts directly to:
+          Prefer email? You can send your thoughts to
           <a href="mailto:nipun.nur@gmail.com">nipun.nur@gmail.com</a>
         </p>
       </section>
@@ -96,6 +108,7 @@
     <footer>
       <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
     </footer>
+
   </div>
 </body>
 </html>
