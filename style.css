@@ -1,3 +1,84 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f9ff;
+  color: #111;
+}
+
+h1, h2, h3 {
+  color: #004aad;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: #004aad;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav li {
+  margin: 5px 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.menu-toggle {
+  display: none;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 24px;
+    text-align: right;
+    cursor: pointer;
+  }
+  #nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  #nav-list.active {
+    display: flex;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #004aad;
+  color: white;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Welcome Card */
+main div {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 /* Social Media Sections */
 .connect-section {
   text-align: center;
@@ -9,7 +90,7 @@
   margin-bottom: 25px;
 }
 
-/* Social icons row (travel/life section) */
+/* Social icons row */
 .icon-row {
   display: flex;
   justify-content: center;
