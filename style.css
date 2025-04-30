@@ -144,3 +144,10 @@ section:not(:last-child) {
   font-weight: bold;
   color: #000;
 }
+/* ===== Blog Post Image Styling ===== */
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
