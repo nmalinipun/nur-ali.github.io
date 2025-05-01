@@ -161,3 +161,21 @@ body {
 main {
   flex: 1;
 }
+/* ==== Blog Share Icons Styling ==== */
+.blog-share-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.blog-share-icons img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.blog-share-icons img:hover {
+  transform: scale(1.1);
+}
