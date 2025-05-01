@@ -151,3 +151,13 @@ section:not(:last-child) {
   border-radius: 10px;
   margin: 20px 0;
 }
+/* Sticky footer setup */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
