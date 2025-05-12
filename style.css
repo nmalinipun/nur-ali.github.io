@@ -67,6 +67,41 @@ nav ul li a:hover {
   margin-bottom: 2rem;
 }
 
+/* Paper Cards */
+.paper-card {
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  max-width: 800px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.paper-icon {
+  height: 26px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.paper-card h3 {
+  font-size: 1.2rem;
+  color: #003f91;
+  display: flex;
+  align-items: center;
+}
+
+.paper-card a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.paper-card a:hover {
+  text-decoration: underline;
+}
+
 /* Profile Image */
 .profile-pic {
   max-width: 200px;
