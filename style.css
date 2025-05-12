@@ -1,128 +1,99 @@
+/* General Layout */
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f6fd;
+  background-color: #ffffff;
   color: #333;
 }
 
 header {
-  background-color: #0047ab;
-  padding: 0.8rem 0.5rem;
-  text-align: center;
+  background-color: #003f91;
   color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 1rem 0;
+  text-align: center;
 }
 
 header h1 {
-  margin: 0.4rem 0;
-  font-size: 1.9rem;
+  margin: 0;
+  font-size: 2rem;
 }
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0.5rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
 }
 
 nav ul li {
-  margin: 0 12px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1rem;
+  padding: 0.5rem;
+  transition: background 0.2s ease-in-out;
 }
 
+nav ul li a.active,
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #0050c0;
+  border-radius: 4px;
 }
 
+/* Intro Section */
 .intro {
   text-align: center;
-  padding: 3.5rem 1rem 2rem;
+  padding: 2rem 1rem 1rem 1rem;
 }
 
-.profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.intro .page-title {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  color: #003f91;
 }
 
-h2 {
-  font-size: 2.1rem;
-  color: #0047ab;
-  margin-bottom: 0.6rem;
+.intro .page-subtitle {
+  font-size: 1.1rem;
+  color: #666;
 }
 
-.page-title {
-  font-size: 2.2rem;
-  color: #0047ab;
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 0.3rem;
-}
-
-.page-subtitle {
-  font-style: italic;
-  text-align: center;
-  color: #444;
+.intro p:last-of-type {
   margin-bottom: 2rem;
-  font-size: 1.1rem;
 }
 
-p {
-  font-size: 1.1rem;
-  margin: 0.25rem 0;
+/* Profile Image */
+.profile-pic {
+  max-width: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 2rem auto 1rem auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Footer */
 footer {
-  background-color: #0047ab;
-  color: white;
   text-align: center;
   padding: 1rem 0;
-  margin-top: 3rem;
+  background-color: #f0f0f0;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 2rem;
 }
 
-/* Responsive for Mobile */
+/* Responsive Nav */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
-    align-items: center;
+    gap: 0.3rem;
   }
 
   nav ul li {
-    margin: 0.4rem 0;
-  }
-
-  .intro {
-    padding: 2.2rem 1rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-
-  .page-title {
-    font-size: 1.7rem;
-  }
-
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-
-  p {
-    font-size: 1rem;
+    margin: 5px 0;
   }
 }
