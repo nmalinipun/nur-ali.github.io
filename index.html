@@ -2,83 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nur Mohammad Ali - Home</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nur Mohammad Ali</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
-  <!-- Navigation Bar -->
-  <nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="nav-list">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Header Section -->
   <header>
-    <h1>Welcome to Nur Mohammad Ali's Official Website</h1>
-    <p>Doctoral Student | Researcher | Engineer | Traveller</p>
+    <h1>Nur Mohammad Ali</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="mycareer.html">MyCareer</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Profile Picture -->
-  <div style="text-align:center; margin:20px 0;">
-    <img src="profile.jpeg" alt="Profile Picture" style="width:200px; border-radius:10px;" />
-  </div>
-
-  <!-- Main Welcome Section -->
-  <main style="text-align:center; padding:20px;">
-    <div style="background-color:#fff; padding:20px; border-radius:12px; max-width:600px; margin:auto; box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+  <main class="home-section">
+    <section class="hero">
       <h2>Hello, I'm Nur Mohammad Ali</h2>
-      <p>Welcome to my official website where I share my research, travels, and projects.</p>
-    </div>
+      <p>A Doctoral Student in Industrial Engineering at Lamar University</p>
+      <p>Exploring AI, Supply Chain, and Augmented Reality</p>
+    </section>
   </main>
 
-  <!-- Life Moments Slideshow -->
-  <section style="text-align:center; padding:40px 20px;">
-    <h2 style="font-size:28px; color:#004aad;">Life Moments</h2>
-    <p style="font-style:italic; color:#555;">"Dream big, work hard, stay humble."</p>
-    <div>
-      <img id="slideshow" src="img1.jpg" alt="Life Moment" style="width:300px; border-radius:12px; margin-top:20px;" />
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
-
-  <!-- Scripts -->
-  <script>
-    // Slideshow Script
-    const images = [
-      'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
-      'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpg'
-    ];
-    let idx = 0;
-    const slide = document.getElementById('slideshow');
-    setInterval(() => {
-      idx = (idx + 1) % images.length;
-      slide.src = images[idx];
-    }, 3000);
-
-    // Hamburger Menu Script
-    const menuToggle = document.getElementById('menu-toggle');
-    const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => {
-      navList.classList.toggle('active');
-    });
-  </script>
-
 </body>
 </html>
