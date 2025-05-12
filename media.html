@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Media - Nur Mohammad Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Gallery - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .gallery-card {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.08);
+      cursor: pointer;
+    }
+    .gallery-card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    .gallery-card h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    .mini-gallery {
+      display: none;
+      margin-top: 1rem;
+    }
+    .mini-gallery img {
+      width: 100%;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+    }
+    .expanded .mini-gallery {
+      display: block;
+    }
+  </style>
+  <script>
+    function toggleGallery(card) {
+      card.classList.toggle("expanded");
+    }
+  </script>
 </head>
-<body>
-  <nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html" class="active">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
+<body>
   <header>
-    <h1>Media Appearances</h1>
-    <p>Videos, Presentations, and Special Moments</p>
+    <h1>Nur Mohammad Ali</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="MyCareer.html">MyCareer</a></li>
+        <li><a href="media.html" class="active">Media</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main style="text-align:center; padding:40px 20px;">
-    <h2>Featured Videos</h2>
-    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; margin-top:20px;">
-      <iframe width="400" height="225"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="Video 1"></iframe>
-      <iframe width="400" height="225"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="Video 2"></iframe>
+  <section class="intro">
+    <h2 class="page-title">Travel Memories</h2>
+    <p class="page-subtitle">Click a location to explore photo highlights from my U.S. road trips</p>
+  </section>
+
+  <section class="gallery-grid">
+    <div class="gallery-card" onclick="toggleGallery(this)">
+      <img src="images/thumb_florida.jpg" alt="Florida Thumbnail" />
+      <h3>📍 Florida</h3>
+      <div class="mini-gallery">
+        <img src="images/florida1.jpg" alt="Florida Photo 1" />
+        <img src="images/florida2.jpg" alt="Florida Photo 2" />
+        <img src="images/florida3.jpg" alt="Florida Photo 3" />
+      </div>
     </div>
-  </main>
+
+    <div class="gallery-card" onclick="toggleGallery(this)">
+      <img src="images/thumb_colorado.jpg" alt="Colorado Thumbnail" />
+      <h3>📍 Colorado</h3>
+      <div class="mini-gallery">
+        <img src="images/colorado1.jpg" alt="Colorado Photo 1" />
+        <img src="images/colorado2.jpg" alt="Colorado Photo 2" />
+        <img src="images/colorado3.jpg" alt="Colorado Photo 3" />
+      </div>
+    </div>
+
+    <div class="gallery-card" onclick="toggleGallery(this)">
+      <img src="images/thumb_newyork.jpg" alt="New York Thumbnail" />
+      <h3>📍 New York</h3>
+      <div class="mini-gallery">
+        <img src="images/newyork1.jpg" alt="New York Photo 1" />
+        <img src="images/newyork2.jpg" alt="New York Photo 2" />
+        <img src="images/newyork3.jpg" alt="New York Photo 3" />
+      </div>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
-  </script>
 </body>
+
 </html>

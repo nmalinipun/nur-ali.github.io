@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .contact-card {
+      background: #f9f9f9;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      font-size: 1.1rem;
+      text-align: left;
+    }
+    .contact-card p {
+      margin: 1rem 0;
+    }
+    .contact-card a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .contact-card a:hover {
+      text-decoration: underline;
+    }
+    .contact-icon {
+      margin-right: 0.5rem;
+    }
+  </style>
 </head>
-<body>
-  <nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-  </nav>
 
+<body>
   <header>
-    <h1>Contact Me</h1>
-    <p>Let's connect! Feel free to reach out anytime.</p>
+    <h1>Nur Mohammad Ali</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="MyCareer.html">MyCareer</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main style="text-align:center; padding:40px 20px;">
-    <h2>Email Me</h2>
-    <p style="margin-top:20px;">
-      <a href="mailto:nipun.nur@gmail.com">nipun.nur@gmail.com</a><br>
-      <a href="mailto:nali4@lamar.edu">nali4@lamar.edu</a>
-    </p>
-  </main>
+  <section class="intro">
+    <h2 class="page-title">Contact Me</h2>
+    <p class="page-subtitle">Let’s connect for collaboration, research, or conversation</p>
+  </section>
+
+  <section class="contact">
+    <div class="contact-card">
+      <p><span class="contact-icon">📧</span><strong>Email:</strong> <a href="mailto:nali4@lamar.edu">nali4@lamar.edu</a></p>
+      <p><span class="contact-icon">🔗</span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nmalinipun" target="_blank">linkedin.com/in/nmalinipun</a></p>
+      <p><span class="contact-icon">🧠</span><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=-kEaIB0AAAAJ&hl=en" target="_blank">Scholar Profile</a></p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
-  </script>
 </body>
+
 </html>

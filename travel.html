@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Travel - Nur Mohammad Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Log - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .travel-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      line-height: 1.6;
+    }
+    .travel-state {
+      margin-bottom: 2rem;
+      border-left: 4px solid #0077cc;
+      padding-left: 1rem;
+    }
+    .travel-state h3 {
+      margin-bottom: 0.3rem;
+    }
+    .travel-state a {
+      text-decoration: none;
+      color: #0066cc;
+    }
+    .travel-state a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body>
-  <nav>
-    <div class="menu-toggle" id="menu-toggle">☰</div>
-    <ul id="nav-list">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="volunteering.html">Volunteering</a></li>
-      <li><a href="travel.html" class="active">Travel</a></li>
-      <li><a href="social.html">Social</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
+<body>
   <header>
-    <h1>My Travel Journey</h1>
-    <p>Exploring new places, meeting different cultures, and witnessing nature's beauty...</p>
+    <h1>Nur Mohammad Ali</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="MyCareer.html">MyCareer</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="travel.html" class="active">Travel</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main style="text-align:center; padding:40px 20px;">
-    <div style="max-width:900px; margin:auto; font-size:18px; color:#333;">
-      Every trip has shaped my thoughts and expanded my horizons. Here are some glimpses from my adventures.
+  <section class="intro">
+    <h2 class="page-title">Travel Journal</h2>
+    <p class="page-subtitle">Every state tells a story. Here are some of mine.</p>
+  </section>
+
+  <section class="travel-container">
+    <div class="travel-state">
+      <h3>📍 Florida</h3>
+      <p>Sunsets in Miami, long drives along the coast, and Cuban sandwiches in Tampa. <a href="media.html#florida">View Gallery</a></p>
     </div>
-    <div style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; margin-top:30px;">
-      <img src="life-moments/img4.jpg" alt="Travel 1" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
-      <img src="life-moments/img5.jpg" alt="Travel 2" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
-      <img src="life-moments/img6.jpg" alt="Travel 3" style="width:300px; height:200px; object-fit:cover; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.2);" />
+    <div class="travel-state">
+      <h3>📍 Colorado</h3>
+      <p>Snow-covered peaks, Denver’s tech vibes, and hikes through the Rockies. <a href="media.html#colorado">View Gallery</a></p>
     </div>
-  </main>
+    <div class="travel-state">
+      <h3>📍 New York</h3>
+      <p>Broadway lights, city that never sleeps, and peaceful moments in Central Park. <a href="media.html#newyork">View Gallery</a></p>
+    </div>
+    <div class="travel-state">
+      <h3>📍 Texas</h3>
+      <p>My home base. Austin's music, San Antonio’s River Walk, and Houston’s diversity.</p>
+    </div>
+    <div class="travel-state">
+      <h3>📍 Maryland</h3>
+      <p>Quiet streets, beautiful harbor views, and heartfelt church communities.</p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
-
-  <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const navList = document.getElementById('nav-list');
-    menuToggle.addEventListener('click', () => navList.classList.toggle('active'));
-  </script>
 </body>
 </html>

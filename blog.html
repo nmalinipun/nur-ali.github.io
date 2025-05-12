@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>Blog - Nur Mohammad Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     .blog-post {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-      text-align: center;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      margin: 1rem 0;
+      padding: 1rem;
+      cursor: pointer;
     }
-    .blog-post img {
-      max-width: 600px;
-      width: 100%;
-      border-radius: 10px;
-      margin: 20px auto;
+    .blog-post h3 {
+      margin: 0;
+    }
+    .blog-content {
+      display: none;
+      margin-top: 1rem;
+    }
+    .blog-post.expanded .blog-content {
       display: block;
     }
+    .blog-post img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+    }
   </style>
+  <script>
+    function toggleBlog(post) {
+      post.classList.toggle("expanded");
+    }
+  </script>
 </head>
-<body>
-  <div class="wrapper">
 
-    <!-- Navigation -->
+<body>
+  <header>
+    <h1>Nur Mohammad Ali</h1>
     <nav>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul id="nav-list">
+      <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="research.html">Research</a></li>
         <li><a href="blog.html" class="active">Blog</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="MyCareer.html">MyCareer</a></li>
         <li><a href="media.html">Media</a></li>
         <li><a href="volunteering.html">Volunteering</a></li>
         <li><a href="travel.html">Travel</a></li>
@@ -40,75 +54,35 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+  </header>
 
-    <!-- Blog Header -->
-    <header>
-      <h1>My Blog</h1>
-      <p>Stories, Experiences, and Insights</p>
-    </header>
+  <section class="intro">
+    <h2 class="page-title">My Blog</h2>
+    <p class="page-subtitle">Stories, Experiences, and Insights</p>
+  </section>
 
-    <!-- Blog Content -->
-    <main>
-      <section class="blog-post">
-        <h2>✈️ New Beginnings: My First Step into American Academic Life</h2>
+  <section class="blog">
+    <div class="blog-post" onclick="toggleBlog(this)">
+      <h3>🌏 New Beginnings: My First Step into American Academic Life</h3>
+      <div class="blog-content">
         <p><strong>Date:</strong> January 22, 2023 | <strong>Author:</strong> Nur Mohammad Ali</p>
+        <img src="images/plane.jpg" alt="Nur Mohammad Ali on Plane" />
+        <p>On January 22, 2023, I landed at George Bush Intercontinental Airport in Houston, Texas, at 7:00 PM...</p>
+        <p>Though excited, I faced a small challenge at immigration...</p>
+        <p>My good friend Richard from <strong>JCI</strong> came all the way to pick me up...</p>
+        <img src="images/airport.jpg" alt="Houston Airport" />
+        <p>The very next day, I had my first meal at the <strong>Catholic Student Center</strong>...</p>
+        <img src="images/flags.jpg" alt="Student Center Flags" />
+        <img src="images/father.jpg" alt="Father Rodel" />
+        <p>I started this journey as an <strong>F1 student</strong>...</p>
+        <img src="images/burger.jpg" alt="First Meal in US" />
+      </div>
+    </div>
+  </section>
 
-        <img src="IMG_8049.jpg" alt="Flight to USA" />
-
-        <p>On January 22, 2023, I landed at George Bush Intercontinental Airport in Houston, Texas, at 7:00 PM. That moment changed my life. As I stepped off the plane, the first thing I saw was the glowing sign — <strong>“Welcome to Houston.”</strong></p>
-
-        <img src="IMG_8083.jpg" alt="Welcome to Houston Sign" />
-
-        <p>Though excited, I faced a small challenge at immigration. My classes had already started on January 17th, and the officer took me to a separate room. Thankfully, I had a <strong>late arrival permission letter</strong> from my university. After reading it, the officer smiled and welcomed me warmly. I realized how important it is for F1 students to carry all necessary documents.</p>
-
-        <p>My good friend Richard from <strong>JCI</strong> came all the way to pick me up. A true gentleman with a kind heart, he dropped me off at my new apartment, <strong>The Edge in Beaumont</strong>. It was a four-bedroom apartment shared with six Bangladeshi roommates. We were all excited to start our first semester together!</p>
-
-        <img src="IMG_8101.jpg" alt="Flags Representing Cultural Diversity" />
-
-        <p>The very next day, I had my first meal at the <strong>Catholic Student Center</strong>. It was delicious, but even more heartwarming was meeting <strong>Father Rodel</strong>. His generosity and hospitality reminded me of home. That experience became a symbol of kindness in my new journey.</p>
-
-        <img src="IMG_8123.jpg" alt="Meal inside Catholic Student Center" />
-        <img src="IMG_8124.jpg" alt="Burger and Pepsi - First Meal in the USA" />
-
-        <p>That’s how my story in the United States began — filled with uncertainty, excitement, friendship, food, and faith. I started this journey as an <strong>F1 student</strong>, and I carry with me not just dreams, but deep gratitude for every person who supported me.</p>
-
-        <p>To all new international students — don’t worry if things feel overwhelming. Keep your documents ready, accept help with an open heart, and most of all — believe in your journey.</p>
-
-        <!-- Share Buttons -->
-<h3 style="margin-top: 40px;">📤 Share this blog</h3>
-<div class="blog-share-icons">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https://nur-ali.com/blog.html" target="_blank">
-    <img src="facebook.png" alt="Facebook Share" />
-  </a>
-  <a href="mailto:?subject=Check%20this%20blog&body=Read%20this%20inspiring%20story:%20https://nur-ali.com/blog.html">
-    <img src="gmail.png" alt="Gmail Share" />
-  </a>
-</div>
-
-        <!-- Comments -->
-        <h3 style="margin-top: 40px;">💬 Leave a Comment</h3>
-        <div id="fb-root"></div>
-        <script async defer crossorigin="anonymous"
-          src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="FbApp">
-        </script>
-        <div class="fb-comments"
-             data-href="https://nur-ali.com/blog.html"
-             data-width="100%"
-             data-numposts="5">
-        </div>
-
-        <p style="margin-top: 20px;">
-          Prefer email? You can send your thoughts to
-          <a href="mailto:nipun.nur@gmail.com">nipun.nur@gmail.com</a>
-        </p>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
-    </footer>
-
-  </div>
+  <footer>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
