@@ -6,33 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Blog - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    .blog-post {
-      background-color: #f1f1f1;
-      border-radius: 8px;
-      margin: 1rem 0;
-      padding: 1rem;
-      cursor: pointer;
-    }
-    .blog-post h3 {
-      margin: 0;
-    }
-    .blog-content {
-      display: none;
-      margin-top: 1rem;
-    }
-    .blog-post.expanded .blog-content {
-      display: block;
-    }
-    .blog-post img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1rem;
-    }
-  </style>
   <script>
-    function toggleBlog(post) {
-      post.classList.toggle("expanded");
+    function toggleBlog(element) {
+      element.classList.toggle("expanded");
     }
   </script>
 </head>
@@ -63,19 +39,25 @@
 
   <section class="blog">
     <div class="blog-post" onclick="toggleBlog(this)">
-      <h3>🌏 New Beginnings: My First Step into American Academic Life</h3>
+      <h3>🌍 New Beginnings: My First Step into American Academic Life</h3>
       <div class="blog-content">
         <p><strong>Date:</strong> January 22, 2023 | <strong>Author:</strong> Nur Mohammad Ali</p>
-        <img src="images/plane.jpg" alt="Nur Mohammad Ali on Plane" />
-        <p>On January 22, 2023, I landed at George Bush Intercontinental Airport in Houston, Texas, at 7:00 PM...</p>
-        <p>Though excited, I faced a small challenge at immigration...</p>
-        <p>My good friend Richard from <strong>JCI</strong> came all the way to pick me up...</p>
-        <img src="images/airport.jpg" alt="Houston Airport" />
-        <p>The very next day, I had my first meal at the <strong>Catholic Student Center</strong>...</p>
-        <img src="images/flags.jpg" alt="Student Center Flags" />
-        <img src="images/father.jpg" alt="Father Rodel" />
-        <p>I started this journey as an <strong>F1 student</strong>...</p>
-        <img src="images/burger.jpg" alt="First Meal in US" />
+        <img src="IMG_8049.jpg" alt="Nur Mohammad Ali on Plane" />
+        <p>On January 22, 2023, I landed at George Bush Intercontinental Airport in Houston, Texas, at 7:00 PM. That moment changed my life. As I stepped off the plane, the first thing I saw was the glowing sign — <strong>“Welcome to Houston.”</strong></p>
+
+        <p>Though excited, I faced a small challenge at immigration. My classes had already started on January 17th, and the officer took me to a separate room. Thankfully, I had a <strong>late arrival permission letter</strong> from my university. After reading it, the officer smiled and welcomed me warmly. I realized how important it is for F1 students to carry all necessary documents.</p>
+
+        <p>My good friend Richard from <strong>JCI</strong> came all the way to pick me up. A true gentleman with a kind heart, he dropped me off at my new apartment, <strong>The Edge in Beaumont</strong>. It was a four-bedroom apartment shared with six Bangladeshi roommates. We were all excited to start our first semester together!</p>
+
+        <img src="IMG_8083.jpg" alt="Houston Airport" />
+        <p>The very next day, I had my first meal at the <strong>Catholic Student Center</strong>. It was delicious, but even more heartwarming was meeting <strong>Father Rodel</strong>. His generosity and hospitality reminded me of home. That experience became a symbol of kindness in my new journey.</p>
+
+        <img src="IMG_8101.jpg" alt="Student Center Flags" />
+        <img src="IMG_8121.jpg" alt="Father Rodel" />
+        <p>I started this journey as an <strong>F1 student</strong>, and I carry with me not just dreams, but deep gratitude for every person who supported me.</p>
+
+        <img src="IMG_8124.jpg" alt="First Meal in USA" />
+        <p>To all new international students — don’t worry if things feel overwhelming. Keep your documents ready, accept help with an open heart, and most of all — believe in your journey.</p>
       </div>
     </div>
   </section>
