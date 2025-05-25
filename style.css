@@ -132,3 +132,20 @@ footer {
     margin: 5px 0;
   }
 }
+
+/* Ensure Footer Stays at Bottom */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+.intro,
+footer {
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: auto;
+}
