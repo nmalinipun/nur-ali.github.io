@@ -7,6 +7,24 @@ body {
   color: #333;
 }
 
+/* Ensure Footer Always at Bottom */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+.intro,
+footer {
+  flex-shrink: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Header */
 header {
   background-color: #003f91;
   color: white;
@@ -118,7 +136,6 @@ footer {
   background-color: #f0f0f0;
   font-size: 0.9rem;
   color: #777;
-  margin-top: 2rem;
 }
 
 /* Responsive Nav */
@@ -133,19 +150,27 @@ footer {
   }
 }
 
-/* Ensure Footer Stays at Bottom */
-.page-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* About Page List Styling */
+.about-list {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  list-style: none;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: left;
 }
 
-header,
-.intro,
-footer {
-  flex-shrink: 0;
+.about-list li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
 }
 
-footer {
-  margin-top: auto;
+.about-list li::before {
+  content: "•";
+  color: #003f91;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
 }
