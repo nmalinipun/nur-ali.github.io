@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Volunteering - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* Featured Volunteer Thumbnail */
+    .vol-featured {
+      display: flex;
+      align-items: center;
+      background: #f4f8ff;
+      border-radius: 14px;
+      box-shadow: 0 2px 12px rgba(0,63,145,0.06);
+      padding: 1rem;
+      margin: 1.5rem auto 2rem auto;
+      max-width: 520px;
+      transition: box-shadow 0.2s;
+    }
+    .vol-featured:hover {
+      box-shadow: 0 6px 24px rgba(0,63,145,0.14);
+    }
+    .vol-thumb {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-right: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      border: 3px solid #fff;
+    }
+    .vol-featured-title {
+      color: #003f91;
+      font-size: 1.12rem;
+      line-height: 1.3;
+    }
+
+    /* Volunteering Gallery */
+    .vol-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 0.6rem;
+      justify-content: center;
+    }
+    .vol-gallery img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      transition: transform 0.18s;
+      background: #eee;
+    }
+    .vol-gallery img:hover {
+      transform: scale(1.06);
+      box-shadow: 0 6px 18px rgba(0,63,145,0.14);
+    }
+    @media (max-width: 650px) {
+      .vol-gallery img {
+        width: 48vw;
+        height: 26vw;
+        min-width: 120px;
+        min-height: 70px;
+        max-width: 95vw;
+        max-height: 35vw;
+      }
+      .vol-featured {
+        flex-direction: column;
+        text-align: center;
+        padding: 0.7rem;
+      }
+      .vol-thumb {
+        margin: 0 0 0.6rem 0;
+      }
+    }
+
+    /* Section & Expandable */
     .vol-section {
       max-width: 900px;
       margin: 2rem auto;
@@ -16,7 +86,7 @@
       background: #f2f2f2;
       border-radius: 8px;
       padding: 1rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
     }
     .vol-category h3 {
@@ -24,23 +94,15 @@
       cursor: pointer;
     }
     .vol-years {
-      display: none;
-      padding-left: 1rem;
+      display: block;
+      padding-left: 0.4rem;
     }
     .vol-years li {
-      margin: 0.3rem 0;
-    }
-    .expanded .vol-years {
-      display: block;
+      margin: 0.7rem 0;
+      list-style: none;
     }
   </style>
-  <script>
-    function toggleYears(element) {
-      element.parentElement.classList.toggle("expanded");
-    }
-  </script>
 </head>
-
 <body>
   <header>
     <h1>Nur Mohammad Ali</h1>
@@ -62,44 +124,47 @@
 
   <section class="intro">
     <h2 class="page-title">Volunteer Experience</h2>
-    <p class="page-subtitle">Click a category to view your volunteer contributions by year</p>
+    <p class="page-subtitle">Highlighting my first US volunteering project</p>
   </section>
 
+  <!-- Featured Thumbnail -->
+  <div class="vol-featured">
+    <a href="#houston-jaycees-2024" style="text-decoration:none;">
+      <img src="IMG_7367.jpg" alt="Houston Jaycees Tech Training 2024" class="vol-thumb">
+      <div class="vol-featured-title">
+        <b>2024 Houston Jaycees Senior Tech Training</b><br>
+        <span style="font-size:0.93rem;color:#555;">(Houston, TX, USA)</span>
+      </div>
+    </a>
+  </div>
+
   <section class="vol-section">
-    <div class="vol-category">
-      <h3 onclick="toggleYears(this)">🇺🇸 JCI USA</h3>
+    <div class="vol-category" id="houston-jaycees-2024">
+      <h3>
+        🇺🇸 2024 Houston Jaycees Senior Tech Training <span style="font-size:1rem; color:#888;">(Featured)</span>
+      </h3>
       <ul class="vol-years">
-        <li>2025 - Volunteer Role</li>
-        <li>2024 - State Convention Speaker</li>
-        <li>2023</li>
-        <li>2022</li>
-        <li>2021</li>
-        <li>2020</li>
-      </ul>
-    </div>
-
-    <div class="vol-category">
-      <h3 onclick="toggleYears(this)">🇧🇩 JCI Bangladesh</h3>
-      <ul class="vol-years">
-        <li>2021 - Youth Leadership Program</li>
-        <li>2020 - Community Cleanup Campaign</li>
-      </ul>
-    </div>
-
-    <div class="vol-category">
-      <h3 onclick="toggleYears(this)">🇺🇸 USA General Volunteering</h3>
-      <ul class="vol-years">
-        <li>2025 - Catholic Student Center Event</li>
-        <li>2024 - Campus Tech Fair</li>
-      </ul>
-    </div>
-
-    <div class="vol-category">
-      <h3 onclick="toggleYears(this)">⚡ IEEE USA</h3>
-      <ul class="vol-years">
-        <li>2024 - Conference Logistics Assistant</li>
-        <li>2023</li>
-        <li>2022</li>
+        <li>
+          <div class="vol-gallery">
+            <img src="IMG_3551.JPG" alt="Training Room" loading="lazy">
+            <img src="IMG_7367.jpg" alt="Group Photo" loading="lazy">
+            <img src="IMG_9701.jpg" alt="Live Demo" loading="lazy">
+            <img src="IMG_3580.JPG" alt="Selfie with Seniors" loading="lazy">
+          </div>
+          <p style="font-size:1.08rem; margin:0.7rem 0 0.4rem 0;">
+            <b>Project Lead:</b> Nur Mohammad Ali &nbsp;|&nbsp; <b>Team:</b> 12 Volunteers<br>
+            <b>Location:</b> Houston, Texas, USA &nbsp;|&nbsp; <b>Date:</b> 2024
+          </p>
+          <p style="font-size:1.01rem;">
+            Led a full-day digital skills training for <b>32 American senior citizens (60+)</b>.<br>
+            Taught <b>ChatGPT, Facebook, Google Meet, Zoom</b> so they can connect with loved ones.<br>
+            <ul style="margin-top:0.5rem; margin-bottom:0.5rem; font-size:1.01rem;">
+              <li>Friendly, hands-on learning</li>
+              <li>One-on-one support</li>
+              <li>Empowering seniors to use today’s technology confidently</li>
+            </ul>
+          </p>
+        </li>
       </ul>
     </div>
   </section>
