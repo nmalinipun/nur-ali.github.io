@@ -6,100 +6,95 @@
   <title>Volunteering - Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Featured Volunteer Thumbnail */
-    .vol-featured {
-      display: flex;
-      align-items: center;
-      background: #f4f8ff;
-      border-radius: 14px;
-      box-shadow: 0 2px 12px rgba(0,63,145,0.06);
-      padding: 1rem;
-      margin: 1.5rem auto 2rem auto;
-      max-width: 520px;
-      transition: box-shadow 0.2s;
-    }
-    .vol-featured:hover {
-      box-shadow: 0 6px 24px rgba(0,63,145,0.14);
-    }
-    .vol-thumb {
-      width: 90px;
-      height: 90px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-right: 1rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-      border: 3px solid #fff;
-    }
-    .vol-featured-title {
+    .vol-page-title {
+      text-align: center;
+      font-size: 2.2rem;
       color: #003f91;
-      font-size: 1.12rem;
-      line-height: 1.3;
+      margin-top: 2.5rem;
+      margin-bottom: 0.2rem;
+      font-weight: bold;
     }
-
-    /* Volunteering Gallery */
-    .vol-gallery {
+    .vol-page-subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 1.16rem;
+      margin-bottom: 2.2rem;
+    }
+    .vol-card {
       display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 0.6rem;
-      justify-content: center;
+      align-items: flex-start;
+      background: #fafbfc;
+      border-radius: 20px;
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.09);
+      padding: 1.5rem 1.5rem 1rem 1.5rem;
+      margin: 0 auto 2.5rem auto;
+      max-width: 950px;
+      gap: 1.6rem;
+      transition: box-shadow 0.22s;
     }
-    .vol-gallery img {
+    .vol-card:hover {
+      box-shadow: 0 4px 28px rgba(0,63,145,0.14);
+    }
+    .vol-card-img {
       width: 180px;
-      height: 120px;
+      height: 180px;
       object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-      transition: transform 0.18s;
+      border-radius: 16px;
+      box-shadow: 0 1px 10px rgba(0,0,0,0.10);
+      margin-bottom: 0.5rem;
+      flex-shrink: 0;
       background: #eee;
     }
-    .vol-gallery img:hover {
-      transform: scale(1.06);
-      box-shadow: 0 6px 18px rgba(0,63,145,0.14);
+    .vol-card-content {
+      flex: 1 1 0;
     }
-    @media (max-width: 650px) {
-      .vol-gallery img {
-        width: 48vw;
-        height: 26vw;
-        min-width: 120px;
-        min-height: 70px;
-        max-width: 95vw;
-        max-height: 35vw;
-      }
-      .vol-featured {
-        flex-direction: column;
-        text-align: center;
-        padding: 0.7rem;
-      }
-      .vol-thumb {
-        margin: 0 0 0.6rem 0;
-      }
+    .vol-card-title {
+      font-size: 1.34rem;
+      color: #003f91;
+      font-weight: bold;
+      margin: 0 0 0.6rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
     }
-
-    /* Section & Expandable */
-    .vol-section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
+    .vol-card-title .emoji {
+      font-size: 1.4rem;
     }
-    .vol-category {
-      background: #f2f2f2;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-bottom: 2.5rem;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    .vol-card-date {
+      color: #666;
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
     }
-    .vol-category h3 {
-      margin-bottom: 0.5rem;
+    .vol-card-desc {
+      font-size: 1.07rem;
+      margin-bottom: 0.8rem;
+      color: #222;
+    }
+    .vol-gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 0.9rem;
+    }
+    .vol-gallery-grid img {
+      width: 124px;
+      height: 85px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 1px 7px rgba(0,0,0,0.09);
+      background: #eee;
+      transition: transform 0.17s;
       cursor: pointer;
     }
-    .vol-years {
-      display: block;
-      padding-left: 0.4rem;
+    .vol-gallery-grid img:hover {
+      transform: scale(1.06);
+      box-shadow: 0 6px 16px rgba(0,63,145,0.13);
     }
-    .vol-years li {
-      margin: 0.7rem 0;
-      list-style: none;
+    @media (max-width: 700px) {
+      .vol-card { flex-direction: column; align-items: center; padding: 1rem 0.6rem 0.8rem 0.6rem; }
+      .vol-card-img { width: 98vw; max-width: 300px; height: 140px; margin: 0 0 1rem 0; }
+      .vol-gallery-grid img { width: 47vw; max-width: 150px; height: 15vw; min-width: 90px; min-height: 50px;}
     }
   </style>
 </head>
@@ -121,54 +116,37 @@
       </ul>
     </nav>
   </header>
-
-  <section class="intro">
-    <h2 class="page-title">Volunteer Experience</h2>
-    <p class="page-subtitle">Highlighting my first US volunteering project</p>
-  </section>
-
-  <!-- Featured Thumbnail -->
-  <div class="vol-featured">
-    <a href="#houston-jaycees-2024" style="text-decoration:none;">
-      <img src="IMG_7367.jpg" alt="Houston Jaycees Tech Training 2024" class="vol-thumb">
-      <div class="vol-featured-title">
-        <b>2024 Houston Jaycees Senior Tech Training</b><br>
-        <span style="font-size:0.93rem;color:#555;">(Houston, TX, USA)</span>
-      </div>
-    </a>
+  <div>
+    <div class="vol-page-title">My Volunteering</div>
+    <div class="vol-page-subtitle">First US Community Service: Tech Training for Seniors (Houston, TX, 2024)</div>
   </div>
-
-  <section class="vol-section">
-    <div class="vol-category" id="houston-jaycees-2024">
-      <h3>
-        🇺🇸 2024 Houston Jaycees Senior Tech Training <span style="font-size:1rem; color:#888;">(Featured)</span>
-      </h3>
-      <ul class="vol-years">
-        <li>
-          <div class="vol-gallery">
-            <img src="IMG_3551.JPG" alt="Training Room" loading="lazy">
-            <img src="IMG_7367.jpg" alt="Group Photo" loading="lazy">
-            <img src="IMG_9701.jpg" alt="Live Demo" loading="lazy">
-            <img src="IMG_3580.JPG" alt="Selfie with Seniors" loading="lazy">
-          </div>
-          <p style="font-size:1.08rem; margin:0.7rem 0 0.4rem 0;">
-            <b>Project Lead:</b> Nur Mohammad Ali &nbsp;|&nbsp; <b>Team:</b> 12 Volunteers<br>
-            <b>Location:</b> Houston, Texas, USA &nbsp;|&nbsp; <b>Date:</b> 2024
-          </p>
-          <p style="font-size:1.01rem;">
-            Led a full-day digital skills training for <b>32 American senior citizens (60+)</b>.<br>
-            Taught <b>ChatGPT, Facebook, Google Meet, Zoom</b> so they can connect with loved ones.<br>
-            <ul style="margin-top:0.5rem; margin-bottom:0.5rem; font-size:1.01rem;">
-              <li>Friendly, hands-on learning</li>
-              <li>One-on-one support</li>
-              <li>Empowering seniors to use today’s technology confidently</li>
-            </ul>
-          </p>
-        </li>
-      </ul>
+  <div class="vol-card">
+    <img class="vol-card-img" src="IMG_7367.jpg" alt="Houston Jaycees Tech Group Photo">
+    <div class="vol-card-content">
+      <div class="vol-card-title">
+        <span class="emoji">🇺🇸</span>
+        2024 Houston Jaycees Senior Tech Training
+      </div>
+      <div class="vol-card-date">Date: June 2024 &nbsp; | &nbsp; Location: Houston, Texas, USA</div>
+      <div class="vol-card-desc">
+        <b>Role:</b> Project Lead <br>
+        <b>Team:</b> 12 Volunteers &nbsp; | &nbsp; <b>Participants:</b> 32 American seniors (60+ years) <br><br>
+        Led a full-day digital skills training for senior citizens.<br>
+        Taught <b>ChatGPT, Facebook, Google Meet, Zoom</b> to help them connect with family and friends.<br>
+        <ul style="margin:0.4rem 0 0.8rem 1.1rem; font-size:1.01rem;">
+          <li>Hands-on, friendly, step-by-step guidance</li>
+          <li>One-on-one device help and group sessions</li>
+          <li>Empowering older adults to use today's technology confidently</li>
+        </ul>
+      </div>
+      <div class="vol-gallery-grid">
+        <img src="IMG_3551.JPG" alt="Training Room">
+        <img src="IMG_7367.jpg" alt="Group Photo">
+        <img src="IMG_9701.jpg" alt="Live Demo">
+        <img src="IMG_3580.JPG" alt="Selfie with Seniors">
+      </div>
     </div>
-  </section>
-
+  </div>
   <footer>
     <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
   </footer>
