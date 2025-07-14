@@ -297,3 +297,11 @@ footer {
   margin: 0.7rem 0;
   list-style: none;
 }
+
+/* ✅ NEW: Fix oversized research icons */
+.paper-icon {
+  width: 60px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
