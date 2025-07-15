@@ -1,47 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Career - Nur Mohammad Ali</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .career-container {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
-      line-height: 1.7;
-    }
-    .career-container h3 {
-      margin-top: 1.5rem;
-    }
-    .resume-link {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #0077cc;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-    .resume-link:hover {
-      background-color: #005fa3;
-    }
-    iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-      margin-top: 1rem;
-      border-radius: 8px;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Career</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
+
+  <!-- Shared Header and Navigation -->
   <header>
     <h1>Nur Mohammad Ali</h1>
     <nav>
@@ -59,21 +26,27 @@
     </nav>
   </header>
 
-  <section class="intro">
-    <h2 class="page-title">My Career Overview</h2>
-    <p class="page-subtitle">From industry to academia – my journey in engineering, research, and innovation</p>
-  </section>
-
-  <section class="career-container">
-    <h3>📄 View My Resume</h3>
+  <!-- Resume Section -->
+  <main class="career-section">
     <p>You can explore my full resume embedded below. For offline access, feel free to download the PDF version.</p>
-    <a class="resume-link" href="001_Resume_Nur Mohammad Ali.pdf" target="_blank">Download Resume</a>
-    <iframe src="001_Resume_Nur Mohammad Ali.pdf"></iframe>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
-  </footer>
+    <a href="001_Resume_Nur%20Mohammad%20Ali.pdf" download class="btn-download">Download Resume</a>
+
+    <embed src="001_Resume_Nur%20Mohammad%20Ali.pdf" type="application/pdf" width="100%" height="600px" />
+
+    <!-- Social Share Buttons -->
+    <div class="social-icons">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nmalinipun.github.io/MyCareer.html" target="_blank">
+        <img src="facebook.png" alt="Facebook" />
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=https://nmalinipun.github.io/MyCareer.html" target="_blank">
+        <img src="twitter.png" alt="Twitter" />
+      </a>
+      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nmalinipun.github.io/MyCareer.html" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+  </main>
+
 </body>
-
 </html>

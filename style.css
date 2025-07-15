@@ -3,6 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+  color: #333;
 }
 
 header {
@@ -67,6 +69,38 @@ main h2.page-title {
   font-size: 1.1rem;
 }
 
+.post-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.post-preview {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post-preview img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-preview h2 {
+  font-size: 20px;
+  margin: 0.5rem 1rem;
+  color: #003c88;
+}
+
+.post-preview p {
+  font-size: 15px;
+  margin: 0 1rem 1rem;
+  color: #444;
+}
+
 /* === FOOTER === */
 footer {
   text-align: center;
@@ -74,6 +108,17 @@ footer {
   background-color: #f2f2f2;
   color: #333;
   font-size: 0.9rem;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
 }
 
 /* === MOBILE STYLING === */
@@ -109,5 +154,13 @@ footer {
 
   .about-list {
     font-size: 1rem;
+  }
+
+  .post-preview h2 {
+    font-size: 18px;
+  }
+
+  .post-preview p {
+    font-size: 14px;
   }
 }
