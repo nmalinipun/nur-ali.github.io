@@ -1,94 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur Mohammad Ali</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem;
-    }
-    header, footer {
-      background-color: #f0f0f0;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    nav ul li a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-    }
-    .intro-section {
-      display: flex;
-      align-items: center;
-      gap: 2rem;
-      flex-wrap: wrap;
-      padding: 2rem 0;
-      justify-content: center;
-    }
-    .profile-photo {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    }
-    .intro-text {
-      max-width: 600px;
-    }
-    @media screen and (max-width: 768px) {
-      .intro-section {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nur Mohammad Ali - Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="container">
-    <header>
-      <h1>Nur Mohammad Ali</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="MyCareer.html">MyCareer</a></li>
-          <li><a href="volunteering.html">Volunteering</a></li>
-          <li><a href="travel.html">Travel</a></li>
-          <li><a href="social.html">Social</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="mycareer.html">MyCareer</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a href="travel.html">Travel</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section class="intro-section">
-        <img src="profile.jpeg" alt="Nur Mohammad Ali" class="profile-photo">
-        <div class="intro-text">
-          <h2>Hi, I'm Nur Mohammad Ali</h2>
-          <p>
-            A doctoral researcher, engineer, and AI-enthusiast passionate about forecasting, smart supply chains, and digital transformation.
-          </p>
-        </div>
-      </section>
-    </main>
+  <main>
+    <section class="intro">
+      <img src="assets/profile.jpg" alt="Nur Mohammad Ali" class="profile-pic" />
+      <h2>Welcome to My Official Website</h2>
+      <p>
+        I'm Nur Mohammad Ali, an industrial engineering researcher focused on forecasting, AI, and supply chain innovation.<br>
+        Follow my journey as I share my research, life as a doctoral student, and more.
+      </p>
+    </section>
+  </main>
 
-    <footer>
-      <p>© 2025 Nur Mohammad Ali. All rights reserved.</p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
+  </footer>
 </body>
 </html>
