@@ -1,4 +1,4 @@
-/* Reset styles */
+/* Reset and Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -15,29 +15,29 @@ body {
   color: #333;
 }
 
-/* Header Title and Nav Bar */
+/* Header Title */
 header {
-  background-color: #002d72; /* Navy blue */
+  background-color: #002d72; /* Navy Blue */
   color: white;
+  padding: 20px 0 10px 0;
   text-align: center;
-  padding: 10px 0 15px 0;
-  width: 100%;
 }
 
 header h1 {
   font-size: 2.2rem;
   font-weight: bold;
-  color: white;
   margin-bottom: 10px;
+  color: white;
 }
 
+/* Navbar */
 nav ul.navbar {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
   background-color: #002d72;
+  padding: 10px 0;
 }
 
 nav ul.navbar li {
@@ -45,7 +45,7 @@ nav ul.navbar li {
 }
 
 nav ul.navbar a {
-  color: white;
+  color: white;  /* <-- THIS FIXES INVISIBLE TEXT */
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -59,7 +59,7 @@ nav ul.navbar a.active {
   border-bottom: 2px solid white;
 }
 
-/* Main section */
+/* Main */
 main {
   flex: 1;
   padding: 40px 20px;
@@ -74,7 +74,7 @@ main {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer stays at bottom */
+/* Footer */
 footer {
   background-color: #f1f1f1;
   color: #333;
