@@ -49,10 +49,11 @@ main.home-content {
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: top center;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-bottom: 20px;
 }
