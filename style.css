@@ -97,3 +97,67 @@ footer {
     font-weight: bold;
     margin-right: 8px;
 }
+.research-container {
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.section-title {
+    text-align: center;
+    color: #002B5B;
+    margin-bottom: 20px;
+}
+
+.pub-header {
+    color: #003c88;
+    font-size: 20px;
+    margin: 25px 0 15px 0;
+    text-align: center;
+}
+
+.pub-list {
+    list-style: none;
+    padding-left: 0;
+    line-height: 2;
+    font-size: 16px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.pub-list li {
+    margin-bottom: 12px;
+}
+
+.pub-list a {
+    text-decoration: none;
+    color: #003c88;
+}
+
+.pub-list a:hover {
+    text-decoration: underline;
+}
+
+.google-scholar {
+    font-size: 16px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.google-scholar a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.google-scholar a:hover {
+    text-decoration: underline;
+}
+
+.doc-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
