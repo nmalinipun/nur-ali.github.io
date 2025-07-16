@@ -1,56 +1,80 @@
-/* Make sure this is already present or updated */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #000;
+}
+
 header {
-  background-color: #002d72; /* Navy Blue */
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+    background-color: #002B5B;
+    padding: 15px 0;
 }
 
-nav ul.navbar {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: #002d72;
-  padding: 10px 0;
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
 }
 
-nav ul.navbar li {
-  margin: 0 15px;
+nav ul li {
+    margin: 0 15px;
 }
 
-nav ul.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s ease;
 }
 
-nav ul.navbar a:hover {
-  text-decoration: underline;
+nav ul li a:hover, nav ul li a.active {
+    text-decoration: underline;
+    color: #F0F0F0;
 }
 
-nav ul.navbar a.active {
-  border-bottom: 2px solid white;
+main.home-content {
+    flex: 1;
+    text-align: center;
+    padding: 50px 20px;
 }
 
-/* Round and larger profile picture */
-img.profile-pic {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 30px;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
 }
 
-/* Footer always at the bottom */
+main h1 {
+    font-size: 28px;
+    margin: 10px 0;
+    color: #002B5B;
+}
+
+main p {
+    font-size: 16px;
+    margin: 8px 0;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer {
-  background-color: #f1f1f1;
-  color: #333;
-  text-align: center;
-  padding: 15px 10px;
-  margin-top: auto;
-  width: 100%;
-  font-size: 0.9rem;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #f2f2f2;
+    padding: 12px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
 }
