@@ -301,3 +301,16 @@ footer {
   vertical-align: middle;
   margin-right: 6px;
 }
+/* Ensure volunteer post images are responsive and aligned */
+.blog-card img {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Make image grid responsive in post pages */
+@media (max-width: 768px) {
+  .blog-card img {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+}
