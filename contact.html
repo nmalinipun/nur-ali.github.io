@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Nur Mohammad Ali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    .intro {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+
     .contact-card {
-      background: #f9f9f9;
-      padding: 2rem;
-      margin: 2rem auto;
-      max-width: 500px;
-      border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
-      font-size: 1.1rem;
-      text-align: left;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 40px auto 60px;
+      max-width: 750px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
+      font-size: 16px;
+      line-height: 1.8;
     }
-    .contact-card p {
-      margin: 1rem 0;
+
+    .contact-icon {
+      display: inline-block;
+      width: 1.2em;
+      text-align: center;
+      vertical-align: middle;
+      margin-right: 8px;
     }
+
     .contact-card a {
-      color: #0066cc;
+      color: navy;
       text-decoration: none;
+      font-weight: bold;
     }
+
     .contact-card a:hover {
       text-decoration: underline;
+      color: #003366;
     }
-    .contact-icon {
-      margin-right: 0.5rem;
+
+    @media (max-width: 600px) {
+      .contact-card {
+        text-align: center;
+      }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Nur Mohammad Ali</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -46,28 +60,27 @@
         <li><a href="volunteering.html">Volunteering</a></li>
         <li><a href="travel.html">Travel</a></li>
         <li><a href="social.html">Social</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="intro">
-    <h2 class="page-title">Contact Me</h2>
-    <p class="page-subtitle">Let’s connect for collaboration, research, or conversation</p>
-  </section>
-
-  <section class="contact">
-    <div class="contact-card">
-      <p><span class="contact-icon">📧</span><strong>Email (University):</strong> <a href="mailto:nali4@lamar.edu">nali4@lamar.edu</a></p>
-      <p><span class="contact-icon">📨</span><strong>Email (Personal):</strong> <a href="mailto:nipun.nur@gmail.com">nipun.nur@gmail.com</a></p>
-      <p><span class="contact-icon">🔗</span><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/nmalinipun" target="_blank">linkedin.com/in/nmalinipun</a></p>
-      <p><span class="contact-icon">🧠</span><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=-kEaIB0AAAAJ&hl=en" target="_blank">Scholar Profile</a></p>
+  <main>
+    <div class="intro">
+      <h1>Contact Me</h1>
+      <p>Let’s connect for collaboration, research, or conversation</p>
     </div>
-  </section>
+
+    <div class="contact-card">
+      <p><span class="contact-icon">📧</span> Email (University): <a href="mailto:nali4@lamar.edu">nali4@lamar.edu</a></p>
+      <p><span class="contact-icon">📫</span> Email (Personal): <a href="mailto:nipun.nur@gmail.com">nipun.nur@gmail.com</a></p>
+      <p><span class="contact-icon">🔗</span> LinkedIn: <a href="https://linkedin.com/in/nmalinipun" target="_blank">linkedin.com/in/nmalinipun</a></p>
+      <p><span class="contact-icon">🧠</span> Google Scholar: <a href="https://scholar.google.com">Scholar Profile</a></p>
+    </div>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Nur Mohammad Ali. All rights reserved.</p>
+    &copy; 2025 Nur Mohammad Ali. All rights reserved.
   </footer>
 </body>
-
 </html>
