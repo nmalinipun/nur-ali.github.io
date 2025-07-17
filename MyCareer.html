@@ -2,22 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Career</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- Shared Header and Navigation -->
   <header>
-    <h1>Nur Mohammad Ali</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="research.html">Research</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
         <li><a href="blog.html">Blog</a></li>
-        <li><a href="MyCareer.html" class="active">MyCareer</a></li>
+        <li><a href="mycareer.html">MyCareer</a></li>
         <li><a href="volunteering.html">Volunteering</a></li>
         <li><a href="travel.html">Travel</a></li>
         <li><a href="social.html">Social</a></li>
@@ -26,27 +23,41 @@
     </nav>
   </header>
 
-  <!-- Resume Section -->
-  <main class="career-section">
-    <p>You can explore my full resume embedded below. For offline access, feel free to download the PDF version.</p>
+  <main class="blog-container">
+    <img src="search-analysis.png" class="blog-icon" alt="Career Icon" />
+    <h1>My Career Journey</h1>
 
-    <a href="001_Resume_Nur%20Mohammad%20Ali.pdf" download class="btn-download">Download Resume</a>
+    <section class="blog-content">
+      <p>
+        My career reflects a deep commitment to continuous growth, learning, and applying innovative solutions in real-world scenarios. With experience across various industries and international exposure, I have built a path that blends technical skills with strategic thinking.
+      </p>
 
-    <embed src="001_Resume_Nur%20Mohammad%20Ali.pdf" type="application/pdf" width="100%" height="600px" />
+      <h2>Professional Experience</h2>
+      <ul class="about-list">
+        <li>7+ years of experience in supply chain management, logistics, and procurement</li>
+        <li>Worked with leading companies in automotive, electronics, and LPG manufacturing</li>
+        <li>Hands-on expertise with ERP systems like SAP S/4 HANA, Oracle ERP, and Microsoft Excel (advanced level with macros and VBA)</li>
+        <li>Led cross-functional teams to streamline operations and reduce lead times</li>
+        <li>Coordinated local and international shipments for high-value production materials</li>
+        <li>Built forecasting models to support production and inventory planning</li>
+        <li>Published multiple research papers in AI-driven demand forecasting and decision analytics</li>
+      </ul>
 
-    <!-- Social Share Buttons -->
-    <div class="social-icons">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://nmalinipun.github.io/MyCareer.html" target="_blank">
-        <img src="facebook.png" alt="Facebook" />
-      </a>
-      <a href="https://twitter.com/intent/tweet?url=https://nmalinipun.github.io/MyCareer.html" target="_blank">
-        <img src="twitter.png" alt="Twitter" />
-      </a>
-      <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://nmalinipun.github.io/MyCareer.html" target="_blank">
-        <img src="linkedin.png" alt="LinkedIn" />
-      </a>
-    </div>
+      <h2>Resume</h2>
+      <p>
+        You can download my detailed resume in PDF format below:
+      </p>
+      <p style="text-align: center; margin-top: 20px;">
+        <a href="001_Resume_Nur%20Mohammad%20Ali.pdf" target="_blank">
+          <img src="resume-icon.png" class="doc-icon" alt="Resume Icon" />
+          <strong>Download My Resume</strong>
+        </a>
+      </p>
+    </section>
   </main>
 
+  <footer>
+    &copy; 2025 Nur Mohammad Ali. All rights reserved.
+  </footer>
 </body>
 </html>
