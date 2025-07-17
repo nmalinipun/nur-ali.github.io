@@ -356,3 +356,50 @@ footer {
   object-fit: cover;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.12);
 }
+/* SOCIAL PAGE STYLES */
+.social-header {
+  text-align: center;
+  background-color: #002B5B;
+  padding: 40px 20px;
+}
+
+.social-header h1,
+.social-header p {
+  color: white;
+  margin: 10px 0;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.social-card {
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+.social-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive tweak */
+@media (max-width: 768px) {
+  .social-grid {
+    padding: 20px;
+  }
+}

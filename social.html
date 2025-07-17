@@ -6,26 +6,50 @@
   <title>Social Links – Nur Mohammad Ali</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+    header {
+      background-color: #002B5B;
+      padding: 15px 0;
     }
 
-    header {
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    nav ul li a:hover, nav ul li a.active {
+      text-decoration: underline;
+      color: #F0F0F0;
+    }
+
+    main {
+      padding: 50px 20px;
       text-align: center;
-      padding: 2rem 1rem;
     }
 
     h1 {
-      font-size: 2rem;
+      color: #002B5B;
+      font-size: 28px;
     }
 
     .social-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 2rem;
-      padding: 2rem;
+      padding: 2rem 0;
       max-width: 900px;
       margin: auto;
     }
@@ -56,45 +80,70 @@
       color: #222;
       font-weight: 500;
     }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 12px 0;
+      text-align: center;
+      font-size: 14px;
+      margin-top: auto;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Find Me Online</h1>
-    <p>Explore my academic and social profiles</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="MyCareer.html">Career</a></li>
+        <li><a href="volunteering.html">Volunteering</a></li>
+        <li><a class="active" href="social.html">Social</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section class="social-grid">
-    <div class="social-card">
-      <img src="linkedin.png" alt="LinkedIn" />
-      <a href="https://www.linkedin.com/in/nmalinipun/" target="_blank">LinkedIn</a>
-    </div>
-    <div class="social-card">
-      <img src="ORCID_iD.svg.png" alt="ORCID" />
-      <a href="https://orcid.org/0000-0002-0135-9992" target="_blank">ORCID</a>
-    </div>
-    <div class="social-card">
-      <img src="search-analysis.png" alt="Google Scholar" />
-      <a href="https://scholar.google.com/citations?hl=en&user=-kEaIB0AAAAJ" target="_blank">Google Scholar</a>
-    </div>
-    <div class="social-card">
-      <img src="facebook.png" alt="Facebook" />
-      <a href="https://www.facebook.com/nmalinipun" target="_blank">Facebook</a>
-    </div>
-    <div class="social-card">
-      <img src="twitter.png" alt="Twitter" />
-      <a href="https://twitter.com/nmalinipun" target="_blank">Twitter (X)</a>
-    </div>
-    <div class="social-card">
-      <img src="instagram.png" alt="Instagram" />
-      <a href="https://www.instagram.com/nmalinipun" target="_blank">Instagram</a>
-    </div>
-    <div class="social-card">
-      <img src="academia-edu.png" alt="Academia.edu" />
-      <a href="https://lamar.academia.edu/NurMohammadAli" target="_blank">Academia.edu</a>
-    </div>
-  </section>
+  <main>
+    <h1>Find Me Online</h1>
+    <p>Explore my academic and social profiles</p>
 
+    <section class="social-grid">
+      <div class="social-card">
+        <img src="linkedin.png" alt="LinkedIn" />
+        <a href="https://www.linkedin.com/in/nmalinipun/" target="_blank">LinkedIn</a>
+      </div>
+      <div class="social-card">
+        <img src="ORCID_iD.svg.png" alt="ORCID" />
+        <a href="https://orcid.org/0000-0002-0135-9992" target="_blank">ORCID</a>
+      </div>
+      <div class="social-card">
+        <img src="search-analysis.png" alt="Google Scholar" />
+        <a href="https://scholar.google.com/citations?hl=en&user=-kEaIB0AAAAJ" target="_blank">Google Scholar</a>
+      </div>
+      <div class="social-card">
+        <img src="facebook.png" alt="Facebook" />
+        <a href="https://www.facebook.com/nmalinipun" target="_blank">Facebook</a>
+      </div>
+      <div class="social-card">
+        <img src="twitter.png" alt="Twitter" />
+        <a href="https://twitter.com/nmalinipun" target="_blank">Twitter (X)</a>
+      </div>
+      <div class="social-card">
+        <img src="instagram.png" alt="Instagram" />
+        <a href="https://www.instagram.com/nmalinipun" target="_blank">Instagram</a>
+      </div>
+      <div class="social-card">
+        <img src="academia-edu.png" alt="Academia.edu" />
+        <a href="https://lamar.academia.edu/NurMohammadAli" target="_blank">Academia.edu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Nur Mohammad Ali. All rights reserved.
+  </footer>
 </body>
 </html>
