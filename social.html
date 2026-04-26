@@ -30,7 +30,8 @@
       transition: 0.3s ease;
     }
 
-    nav ul li a:hover, nav ul li a.active {
+    nav ul li a:hover,
+    nav ul li a.active {
       text-decoration: underline;
       color: #F0F0F0;
     }
@@ -62,16 +63,18 @@
       background-color: #f4f4f4;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      transition: background 0.2s ease;
+      transition: background 0.2s ease, transform 0.2s ease;
     }
 
     .social-card:hover {
       background-color: #eaeaea;
+      transform: translateY(-3px);
     }
 
     .social-card img {
       width: 40px;
       height: 40px;
+      object-fit: contain;
     }
 
     .social-card a {
@@ -97,12 +100,12 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="research.html">Research</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="MyCareer.html">MyCareer</a></li>
         <li><a href="volunteering.html">Volunteering</a></li>
         <li><a href="travel.html">Travel</a></li>
-        <li><a href="social.html">Social</a></li>
+        <li><a href="social.html" class="active">Social</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -113,39 +116,58 @@
     <p>Explore my academic and social profiles</p>
 
     <section class="social-grid">
+
       <div class="social-card">
         <img src="linkedin.png" alt="LinkedIn" />
-        <a href="https://www.linkedin.com/in/nmalinipun/" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/nmalinipun/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
+
+      <div class="social-card">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/github.svg" alt="GitHub" />
+        <a href="https://github.com/nmalinipun" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+
+      <div class="social-card">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/researchgate.svg" alt="ResearchGate" />
+        <a href="https://www.researchgate.net/profile/Nur-Ali-22?ev=hdr_xprf" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+      </div>
+
       <div class="social-card">
         <img src="ORCID_iD.svg.png" alt="ORCID" />
-        <a href="https://orcid.org/0009-0006-7144-9333" target="_blank">ORCID</a>
+        <a href="https://orcid.org/0009-0006-7144-9333" target="_blank" rel="noopener noreferrer">ORCID</a>
       </div>
+
       <div class="social-card">
         <img src="search-analysis.png" alt="Google Scholar" />
-        <a href="https://scholar.google.com/citations?hl=en&user=-kEaIB0AAAAJ" target="_blank">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=-kEaIB0AAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>
       </div>
+
       <div class="social-card">
         <img src="facebook.png" alt="Facebook" />
-        <a href="https://www.facebook.com/nmalinipun" target="_blank">Facebook</a>
+        <a href="https://www.facebook.com/nmalinipun" target="_blank" rel="noopener noreferrer">Facebook</a>
       </div>
+
       <div class="social-card">
-        <img src="twitter.png" alt="Twitter" />
-        <a href="https://x.com/nurmohammadali" target="_blank">X</a>
+        <img src="twitter.png" alt="X" />
+        <a href="https://x.com/nurmohammadali" target="_blank" rel="noopener noreferrer">X</a>
       </div>
+
       <div class="social-card">
         <img src="instagram.png" alt="Instagram" />
-       <a href="https://www.instagram.com/nipunmunna/" target="_blank">Instagram</a>
+        <a href="https://www.instagram.com/nipunmunna/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
+
       <div class="social-card">
         <img src="academia-edu.png" alt="Academia.edu" />
-        <a href="https://lamar.academia.edu/NurMohammadAli" target="_blank">Academia.edu</a>
+        <a href="https://lamar.academia.edu/NurMohammadAli" target="_blank" rel="noopener noreferrer">Academia.edu</a>
       </div>
+
     </section>
   </main>
 
   <footer>
     &copy; 2025 Nur Mohammad Ali. All rights reserved.
   </footer>
+
 </body>
 </html>
